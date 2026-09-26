@@ -162,6 +162,7 @@ li {
 .contact-hero-wrapper-bottom-right-box {
     width: 50%;
     height: 100%;
-    border: 2px soild lawngreen;
+    border: 2px solid lawngreen;
     display: flex;
 }
+
