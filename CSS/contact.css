@@ -182,9 +182,15 @@ li {
 
 .contact-hero-wrapper-bottom-right-box-nest-top {
     display: flex;
+    flex-direction: column;
     width: fit-content;
     height: 276px;
     border: 2px solid firebrick;
+}
+
+.top-div {
+    display: flex;
+    border: 2px solid black;
 }
 
 .contact-hero-connect-text {
@@ -195,6 +201,12 @@ li {
     line-height: 64px;
     letter-spacing: 1px;
 }
+
+.bottom-div {
+    display: flex;
+    border: 2px solid blueviolet;
+}
+
 
 .contact-hero-wrapper-bottom-right-box-nest-bottom {
     width: 180px;
