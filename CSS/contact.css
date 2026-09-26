@@ -139,9 +139,9 @@ li {
 }
 
 .contact-hero-wrapper-bottom {
-    width: 850px;
+    width: 1000px;
     /* height: 603px; */
-    height: 425px;
+    height: 435px;
     border: 2px solid orange;
     display: flex;
 }
@@ -166,6 +166,39 @@ li {
     height: 100%;
     border: 2px solid lawngreen;
     display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
     border-top-right-radius: 80px;
+    background-color: rgba(245, 243, 241, 1);
 }
 
+.contact-hero-wrapper-bottom-right-box-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contact-hero-wrapper-bottom-right-box-nest-top {
+    display: flex;
+    width: fit-content;
+    height: 276px;
+    border: 2px solid firebrick;
+}
+
+.contact-hero-connect-text {
+    font-family: "Rufina", serif;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 64px;
+    letter-spacing: 1px;
+}
+
+.contact-hero-wrapper-bottom-right-box-nest-bottom {
+    width: 180px;
+    height: 20px;
+    border: 2px solid saddlebrown;
+
+}
