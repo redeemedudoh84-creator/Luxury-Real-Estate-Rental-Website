@@ -139,9 +139,11 @@ li {
 }
 
 .contact-hero-wrapper-bottom {
-    width: 1000px;
+    width: 1100px;
+    /* width: 1000px; */
     /* height: 603px; */
-    height: 435px;
+    /* height: 435px; */
+    height: 450px;
     border: 2px solid orange;
     display: flex;
 }
@@ -182,13 +184,14 @@ li {
 
 .contact-hero-wrapper-bottom-right-box-nest-top {
     display: flex;
+    /* padding-top: 20px; */
     flex-direction: column;
     width: fit-content;
-    height: 276px;
+    height: fit-content;
     border: 2px solid firebrick;
 }
 
-.top-div {
+.contact-hero-wrapper-bottom-right-box-nest-top-up {
     display: flex;
     border: 2px solid black;
 }
@@ -202,15 +205,75 @@ li {
     letter-spacing: 1px;
 }
 
-.bottom-div {
+.contact-hero-wrapper-bottom-right-box-nest-top-down {
     display: flex;
     border: 2px solid blueviolet;
 }
 
+.phone-text {
+    font-family: "Rufina", serif;
+    color: rgba(24, 29, 36, 1);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+.contact-info {
+    font-family: "Rufina", serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.contact-item {
+    margin: 0 0 0.8em 0;
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
+.number-text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: regular;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+.info-text {
+    font-family: "Rufina", serif;
+    font-weight: 400;
+    font-style: regular;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+
+.address-line {
+    padding-left: 4.4em;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: regular;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+/* .phone-text {
+    font-family: "Rufina", serif;
+    color: rgba(24, 29, 36, 1);
+    font-weight: 700;
+    font-style: bold;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+} */
 
 .contact-hero-wrapper-bottom-right-box-nest-bottom {
     width: 180px;
     height: 20px;
     border: 2px solid saddlebrown;
-
 }
