@@ -273,7 +273,26 @@ li {
 } */
 
 .contact-hero-wrapper-bottom-right-box-nest-bottom {
-    width: 180px;
-    height: 20px;
-    border: 2px solid saddlebrown;
+    display: flex;
+    width: 250px;
+    height: 35px;
+    /* border: 2px solid saddlebrown; */
+}
+
+.contact-hero-svg-wrapper{
+    display: flex;
+    gap: 20px;
+}
+
+.svg-holder {
+    display: flex;
+    width: 27px;
+    height: 27px;
+    /* border: 2px solid springgreen; */
+}
+
+.svg-holder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
