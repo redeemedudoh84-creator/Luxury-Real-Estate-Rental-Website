@@ -288,6 +288,12 @@ li {
     height: 795px;
     border: 2px solid red;
     display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.contact-faq-top-container{
+    display: flex;
     justify-content: center;
 }
 
@@ -319,11 +325,19 @@ li {
 
 }
 
+.contact-faq-bottom{
+    border: 2px solid mediumaquamarine;
+    width: 100%;
+    height: 50vh;
+}
+
+
 .contact-faq-bottom-up {
     border: 2px solid burlywood;
+    height: 25vh;
 
 }
 
-.contact-faw-bottom-down{
+.contact-faq-bottom-down{
     border: 2px solid seagreen;
 }
