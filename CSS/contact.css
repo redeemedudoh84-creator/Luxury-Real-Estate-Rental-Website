@@ -77,7 +77,6 @@ li {
 .contact-section {
     position: relative;
     overflow: hidden;
-    background-color: #ffffff;
     padding: 100px 20px;
     min-height: 100vh;
     display: flex;
@@ -91,24 +90,24 @@ li {
     top: -50%;
     left: -50%;
     width: 200%;
-    height: 200%;
+    height: 100%;
+    bottom: -50%; 
     z-index: 0;
     background-image:
         linear-gradient(135deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 60%),
         linear-gradient(315deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 60%);
     filter: blur(250px);
+    background-color: #ffffff;
 }
 
 .contact-hero-wrapper {
     position: relative;
-    z-index: 1; 
-    
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 40px;
-    border: 2px solid rgb(145, 96, 244);
     width: 100%;
 }
 
@@ -131,7 +130,7 @@ li {
 }
 
 .contact-hero-wrapper-bottom {
-    max-width: 1100px; 
+    max-width: 1100px;
     width: 100%;
     min-height: 450px;
     display: flex;
@@ -234,7 +233,6 @@ li {
     letter-spacing: 1px;
 }
 
-
 .address-line {
     padding-left: 4.4em;
     font-family: "Raleway", sans-serif;
@@ -270,24 +268,26 @@ li {
 
 .contact-faq {
     width: 100%;
-    height: 795px;
-    border: 2px solid green;
+    height: fit-content;
+    /* border: 2px solid green; */
     gap: 95px;
 }
 
 .contact-faq-wrapper {
     width: 100%;
-    height: 795px;
-    border: 2px solid red;
+    height: fit-content;
+    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 50px;
+    padding-top: 45px;
 }
 
 .contact-faq-top {
     width: fit-content;
     height: fit-content;
-    border: 2px solid maroon;
+    /* border: 2px solid maroon; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -297,7 +297,7 @@ li {
 .contact-faq-top-up-text {
     font-family: "Rufina", serif;
     text-align: center;
-    font-size: 52px;
+    font-size: 36px;
     font-weight: 700;
     line-height: 64px;
     letter-spacing: 1px;
@@ -305,31 +305,123 @@ li {
 }
 
 .contact-faq-top-down-text {
+    font-family: "Raleway", sans-serif;
     font-style: medium;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-
+    text-align: center;
 }
 
 .contact-faq-bottom {
     display: flex;
-    flex-direction: column;
-    border: 2px solid mediumaquamarine;
+    /* border: 2px solid mediumaquamarine; */
+    width: 90%;
+    height: fit-content;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.contact-faq-bottom-left {
+    display: flex;
+    /* border: 2px solid burlywood; */
+    height: fit-content;
+    width: 50%;
+}
+
+.contact-faq-bottom-left,
+.contact-faq-bottom-right {
+    flex: 1;
+    min-width: 0;
+}
+
+.contact-faq-bottom-right {
+    width: 50%;
+    display: flex;
+    /* border: 2px solid black; */
+    height: fit-content;
+}
+
+.faq-container {
     width: 100%;
-    height: 50vh;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: "Raleway", sans-serif;
+    color: #333;
 }
 
+.faq-item {
+    border-bottom: 1px solid #e0e0e0;
+}
 
-.contact-faq-bottom-up {
+.faq-question {
+    width: 100%;
     display: flex;
-    border: 2px solid burlywood;
-    height: 25vh;
-
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    transition: color 0.2s ease;
 }
 
-.contact-faq-bottom-down {
+.faq-question:hover {
+    color: #000;
+}
+
+.faq-icon {
     display: flex;
-    border: 2px solid seagreen;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    transition: transform 0.3s ease, color 0.3s ease;
+    flex-shrink: 0;
+    margin-top: 2px;
 }
 
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+    color: #333;
+}
+
+.faq-text {
+    font-family: "Raleway", sans-serif;
+    color: #000;
+}
+
+.faq-answer-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease;
+}
+
+.faq-item.active .faq-answer-wrapper {
+    grid-template-rows: 1fr;
+}
+
+.faq-answer {
+    overflow: hidden;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.faq-answer p,
+.faq-answer ul,
+.faq-answer ol {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.faq-answer ul,
+.faq-answer ol {
+    padding-left: 20px;
+}
+
+.faq-answer>*:last-child {
+    margin-bottom: 24px;
+}
