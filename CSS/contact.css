@@ -440,7 +440,7 @@ li {
     justify-content: center;
 }
 
-.contact-form{
+.contact-form {
     width: 80%;
     height: 50vh;
     border: 2px solid red;
@@ -449,4 +449,36 @@ li {
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form-top,
+.contact-form-middle,
+.contact-form-bottom {
+    width: 90%;
+    height: 20vh;
+    border: 2px solid navy;
+}
+
+.contact-form-top {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Rufina", serif;
+}
+
+.sendbtn {
+    background-color: rgba(91, 101, 111, 1);
+    width: 137px;
+    height: 48px;
+    padding: 12px 20px 12px 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    line-height: 24px;
+    font-weight: 600;
 }
