@@ -66,3 +66,66 @@ li {
     text-decoration: none;
     color: white;
 }
+
+.about-us-hero {
+    width: 100%;
+    border: 2px solid red;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-hero-wrapper {
+    width: 83%;
+    height: 70vh;
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.about-us-hero-left-nest,
+.about-us-hero-right-nest {
+    display: flex;
+    width: 45%;
+    height: 69.5vh;
+    border: 1px solid orange;
+}
+
+.about-us-hero-left-nest {
+    border-bottom-right-radius: 80px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: flex;
+}
+
+.about-us-hero-left-nest img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-right-radius: 80px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.about-us-hero-right-nest {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us-hero-right-nest-top {
+    font-size: 28px;
+    font-family: "Rufina", serif;
+    font-weight: 700;
+}
+
+.about-us-hero-right-nest-down {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    line-height: 32px;
+    
+}
