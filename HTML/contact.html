@@ -564,12 +564,49 @@
 
                 <div class="contact-form-middle">
 
+                    <form class="form">
+
+                        <div class="form-row">
+
+                            <div class="input-wrapper">
+
+                                <input type="text" id="name" name="name" placeholder=" " required>
+                                <label for="name" class="label-text">Your Name</label>
+
+                            </div>
+
+                            <div class="input-wrapper">
+
+                                <input type="email" id="email" name="email" placeholder=" " required>
+                                <label for="email" class="label-text">Email</label>
+
+                            </div>
+
+                        </div>
+
+                        <div class="input-wrapper">
+                            <textarea id="message" name="message" placeholder=" " required></textarea>
+                            <label for="message" class="label-text">Message</label>
+                        </div>
+
+                        <div class="checkbox-group">
+
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms" class="label-text">
+                                I accept the <a href="terms.html" target="_blank">Terms and conditions</a>
+                            </label>
+
+                        </div>
+
+                    </form>
+
+
                 </div>
 
                 <div class="contact-form-bottom">
 
-                    <button type="submit" class="sendbtn">SEND</button>
-                    
+                    <button type="submit" class="sendbtn" id="submitBtn" disabled>SEND</button>
+
                 </div>
 
             </div>

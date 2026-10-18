@@ -269,14 +269,13 @@ li {
 .contact-faq {
     width: 100%;
     height: fit-content;
-    /* border: 2px solid green; */
     gap: 95px;
+    background-color: rgb(252, 252, 252);
 }
 
 .contact-faq-wrapper {
     width: 100%;
     height: fit-content;
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -287,7 +286,6 @@ li {
 .contact-faq-top {
     width: fit-content;
     height: fit-content;
-    /* border: 2px solid maroon; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -315,7 +313,6 @@ li {
 
 .contact-faq-bottom {
     display: flex;
-    /* border: 2px solid mediumaquamarine; */
     width: 90%;
     height: fit-content;
     gap: 20px;
@@ -324,7 +321,6 @@ li {
 
 .contact-faq-bottom-left {
     display: flex;
-    /* border: 2px solid burlywood; */
     height: fit-content;
     width: 50%;
 }
@@ -338,7 +334,6 @@ li {
 .contact-faq-bottom-right {
     width: 50%;
     display: flex;
-    /* border: 2px solid black; */
     height: fit-content;
 }
 
@@ -442,8 +437,8 @@ li {
 
 .contact-form {
     width: 80%;
-    height: 50vh;
-    border: 2px solid red;
+    height: fit-content;
+    border: 2px solid #FFFFFF;
     background-color: rgba(255, 255, 255, 1);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -452,6 +447,8 @@ li {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 70px 0px 0px 70px;
+    background-color: #FFFFFF;
 }
 
 .contact-form-top,
@@ -459,7 +456,6 @@ li {
 .contact-form-bottom {
     width: 90%;
     height: 20vh;
-    border: 2px solid navy;
 }
 
 .contact-form-top {
@@ -468,10 +464,15 @@ li {
     font-family: "Rufina", serif;
 }
 
+.contact-form-middle {
+    height: fit-content;
+}
+
 .sendbtn {
     background-color: rgba(91, 101, 111, 1);
     width: 137px;
     height: 48px;
+    margin-top: 30px;
     padding: 12px 20px 12px 20px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -481,4 +482,111 @@ li {
     font-family: "Raleway", sans-serif;
     line-height: 24px;
     font-weight: 600;
+}
+
+.sendbtn:disabled {
+    background-color: rgba(91, 101, 111, 0.4);
+    cursor: not-allowed;
+}
+
+.form {
+    width: 100%;
+    max-width: 900px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 0 0 8px 0;
+    border: none;
+    border-bottom: 1px solid #888;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    color: #333;
+}
+
+.input-wrapper textarea {
+    width: 100%;
+    padding: 0 0 8px 0;
+    border: none;
+    border-bottom: 1px solid #888;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    resize: vertical;
+    min-height: 60px;
+    color: #333;
+}
+
+/* The Labels */
+.input-wrapper label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #777;
+    font-size: 16px;
+    transition: 0.2s ease all;
+    pointer-events: none;
+}
+
+.input-wrapper input:focus~label,
+.input-wrapper input:not(:placeholder-shown)~label,
+.input-wrapper textarea:focus~label,
+.input-wrapper textarea:not(:placeholder-shown)~label {
+    top: -18px;
+    font-size: 12px;
+    color: #888;
+}
+
+.input-wrapper input:focus,
+.input-wrapper textarea:focus {
+    border-bottom-color: #333;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+    accent-color: #555;
+    width: 16px;
+    height: 16px;
+}
+
+.checkbox-group label {
+    cursor: pointer;
+}
+
+.checkbox-group a {
+    color: blue;
+    text-decoration: none;
+}
+
+.checkbox-group a:hover {
+    color: blue;
+}
+
+.label-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
 }
