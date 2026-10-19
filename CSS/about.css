@@ -83,15 +83,15 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10%;
+    gap: 8%;
 }
 
 .about-us-hero-left-nest,
 .about-us-hero-right-nest {
     display: flex;
-    width: 45%;
+    width: 47%;
     height: 69.5vh;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
 }
 
 .about-us-hero-left-nest {
@@ -127,5 +127,65 @@ li {
     font-family: "Raleway", sans-serif;
     font-size: 14px;
     line-height: 32px;
-    
+
+}
+
+.about-us-main-content-area {
+    width: 100%;
+    height: 100vh;
+    border: 2px solid gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-main-content-area-wrapper {
+    width: 83%;
+    height: 85vh;
+    /* border: 2px solid tomato; */
+    display: flex;
+
+}
+
+.about-us-main-content-area-left,
+.about-us-main-content-area-right {
+    width: 50%;
+    height: 84.5vh;
+    /* border: 2px solid palegreen; */
+}
+
+.about-us-main-content-area-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us-main-content-area-left-top,
+.about-us-main-content-area-left-middle,
+.about-us-main-content-area-left-bottom {
+    width: 100%;
+    /* border: 2px solid brown; */
+}
+
+.about-us-main-content-area-left-top {
+    height: 12%;
+    font-family: "Rufina", serif;
+    font-size: 28px;
+}
+
+.about-us-main-content-area-left-middle {
+    height: 82%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    font-family: "Raleway", sans-serif;
+}
+
+.about-us-main-content-area-left-bottom {
+    height: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DFE3E7;
+    font-family: "Rufina", serif;
 }
