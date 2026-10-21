@@ -141,17 +141,15 @@ li {
 
 .about-us-main-content-area-wrapper {
     width: 83%;
-    height: 85vh;
-    /* border: 2px solid tomato; */
+    height: 90vh;
     display: flex;
-
+    border: 2px solid violet;
 }
 
 .about-us-main-content-area-left,
 .about-us-main-content-area-right {
     width: 50%;
     height: 84.5vh;
-    /* border: 2px solid palegreen; */
 }
 
 .about-us-main-content-area-left {
@@ -163,7 +161,6 @@ li {
 .about-us-main-content-area-left-middle,
 .about-us-main-content-area-left-bottom {
     width: 100%;
-    /* border: 2px solid brown; */
 }
 
 .about-us-main-content-area-left-top {
@@ -188,6 +185,33 @@ li {
     justify-content: center;
     background-color: #DFE3E7;
     font-family: "Rufina", serif;
+}
+
+.about-us-main-content-area-right {
+    position: relative;
+}
+
+.imageleft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55%;
+    height: 75%;
+    object-fit: cover;
+    border-bottom-left-radius: 60px;
+    z-index: 2;
+    border: 6px solid #ffffff;
+}
+
+.imageright {
+    position: absolute;
+    top: 12%;
+    right: 0;
+    width: 75%;
+    height: 92%;
+    object-fit: cover;
+    border-top-right-radius: 60px;
+    z-index: 1;
 }
 
 .about-us-cta {
