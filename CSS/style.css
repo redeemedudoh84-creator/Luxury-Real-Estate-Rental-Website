@@ -9,6 +9,7 @@
     /* border: 2px solid green; */
     width: 100%;
     height: 120vh;
+    border-bottom-right-radius: 80px;
 }
 
 .our-regions-wrapper {
@@ -98,6 +99,29 @@
     border-bottom-right-radius: 3px;
 }
 
+.image-overlay-text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+    z-index: 10;
+    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.image-overlay-text h2 {
+    font-family: "Rufina", serif;
+    font-size: 40px;
+    margin: 0 0 5px 0;
+    font-weight: normal;
+}
+
+.image-overlay-text p {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    font-weight: 600;
+}
+
 .our-regions-bottom-right {
     border-top-left-radius: 80px;
     border-top-right-radius: 3px;
@@ -116,27 +140,37 @@
     transform: scaleX(-1);
 }
 
-/* ADD THESE NEW STYLES */
-.image-overlay-text {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-    color: white;
-    z-index: 10;
-    /* Optional: adds a slight shadow so white text is readable on bright images */
-    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6); 
+.our-properties-specialties {
+    width: 100%;
+    height: 60vh;
+    border: 2px solid maroon;
 }
 
-.image-overlay-text h2 {
-    font-family: "Rufina", serif;
-    font-size: 40px;
-    margin: 0 0 5px 0;
-    font-weight: normal;
+.home-page-cta {
+    width: 100%;
+    height: 85vh;
+    border: 2px solid turquoise;
+    border-bottom-right-radius: 150px;
+    background-image: url(/Images/becomeahost.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.image-overlay-text p {
-    font-family: "Raleway", sans-serif;
-    font-size: 16px;
-    margin: 0;
-    font-weight: 600;
+.become-a-host {
+    width: 37%;
+    border: #FFFFFFE0;
+    background-color: #FFFFFFE0;
+    height: 70%;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
