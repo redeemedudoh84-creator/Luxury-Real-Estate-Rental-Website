@@ -149,7 +149,7 @@
 .home-page-cta {
     width: 100%;
     height: 85vh;
-    border: 2px solid turquoise;
+    /* border: 2px solid turquoise; */
     border-bottom-right-radius: 150px;
     background-image: url(/Images/becomeahost.png);
     background-size: cover;
@@ -235,3 +235,88 @@
     cursor: pointer;
     border: none;
 }
+
+.about-us-main-content-area {
+    width: 100%;
+    height: 140vh;
+    border: 2px solid gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-main-content-area-wrapper {
+    width: 83%;
+    height: 90vh;
+    display: flex;
+    border: 2px solid violet;
+}
+
+.about-us-main-content-area-left,
+.about-us-main-content-area-right {
+    width: 50%;
+    height: 84.5vh;
+}
+
+.about-us-main-content-area-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us-main-content-area-left-top,
+.about-us-main-content-area-left-middle,
+.about-us-main-content-area-left-bottom {
+    width: 100%;
+}
+
+.about-us-main-content-area-left-top {
+    height: 12%;
+    font-family: "Rufina", serif;
+    font-size: 28px;
+}
+
+.about-us-main-content-area-left-middle {
+    height: 82%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    font-family: "Raleway", sans-serif;
+}
+
+.about-us-main-content-area-left-bottom {
+    height: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DFE3E7;
+    font-family: "Rufina", serif;
+}
+
+.about-us-main-content-area-right {
+    position: relative;
+}
+
+.imageleft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55%;
+    height: 75%;
+    object-fit: cover;
+    border-bottom-left-radius: 60px;
+    z-index: 2;
+    border: 6px solid #ffffff;
+}
+
+.imageright {
+    position: absolute;
+    top: 12%;
+    right: 0;
+    width: 75%;
+    height: 92%;
+    object-fit: cover;
+    border-top-right-radius: 60px;
+    z-index: 1;
+}
+
