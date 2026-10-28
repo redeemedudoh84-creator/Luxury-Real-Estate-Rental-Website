@@ -239,7 +239,7 @@
 .about-us-main-content-area {
     width: 100%;
     height: 140vh;
-    border: 2px solid gold;
+    /* border: 2px solid gold; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -249,7 +249,7 @@
     width: 83%;
     height: 90vh;
     display: flex;
-    border: 2px solid violet;
+    /* border: 2px solid violet; */
 }
 
 .about-us-main-content-area-left,
@@ -320,3 +320,17 @@
     z-index: 1;
 }
 
+.home-page-cta-image {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/Images/letsconnectbgimage.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;/
+}
+
+.home-page-footer {
+    width: 100%;
+    height: 100vh;
+    border: 2px solid red;
+}
