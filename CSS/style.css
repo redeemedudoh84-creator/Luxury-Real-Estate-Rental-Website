@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+.nav-bar-plus-hero {
+    background-image: url(/Images/hero-image.png);
+    width: 100%;
+    height: 100vh;
+    border: 2px solid maroon;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 150px;
+}
+
+
+
 .our-regions {
     background-color: #C9BDAB;
     /* border: 2px solid green; */
@@ -322,15 +335,314 @@
 
 .home-page-cta-image {
     width: 100%;
-    height: 100vh;
+    height: 130vh;
     background-image: url(/Images/letsconnectbgimage.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;/
 }
 
+.about-us-cta {
+    width: 100%;
+    height: 120vh;
+    /* border: 2px solid gold; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-cta-wrapper {
+    width: 83%;
+    height: 65vh;
+    /* border: 2px solid lawngreen; */
+    display: flex;
+    gap: 1%;
+}
+
+.about-us-cta-left,
+.about-us-cta-right {
+    height: 64.5vh;
+    /* border: 2px solid khaki; */
+}
+
+.about-us-cta-left {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #181D24;
+}
+
+.about-us-cta-right {
+    width: 64%;
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+.about-us-cta-left-wrap {
+    width: 85%;
+    aspect-ratio: 1;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us-cta-left-top,
+.about-us-cta-left-middle,
+.about-us-cta-left-bottom {
+    width: 100%;
+    /* border: 2px solid purple; */
+}
+
+.about-us-cta-left-top {
+    color: #F5E9D6;
+    font-family: "Rufina", serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 64px;
+    letter-spacing: 1px;
+}
+
+.about-us-cta-left-middle {
+    height: 70%;
+    color: #FFFFFF;
+    padding-top: 15px;
+}
+
+.about-us-cta-left-bottom {
+    height: 16%;
+}
+
+.about-us-cta-left-top {
+    height: 25%;
+    padding-top: 13px;
+}
+
+.about-us-cta-left-middle-title {
+    font-weight: 700;
+    font-family: "Rufina", serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-style: bold;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: start;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.about-us-cta-left-middle-title span:last-child {
+    font-family: "Rufina", serif;
+    font-weight: 400;
+    letter-spacing: normal;
+    word-break: break-word;
+}
+
+.contact-hero-svg-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.svg-holder {
+    display: flex;
+    width: 27px;
+    height: 27px;
+}
+
+.svg-holder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    color: white;
+}
+
+.contact-form-wrapper {
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 80px;
+}
+
+.contact-form {
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid #FFFFFF; */
+    background-color: rgba(255, 255, 255, 1);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 45px 0px 0px 70px;
+    background-color: #FFFFFF;
+    /* border: 2px solid red; */
+}
+
+.contact-form-top,
+.contact-form-middle,
+.contact-form-bottom {
+    width: 90%;
+    height: 20vh;
+    /* border: 2px solid navy; */
+}
+
+.contact-form-top {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: "Rufina", serif;
+}
+
+.contact-form-middle {
+    height: fit-content;
+}
+
+.sendbtn {
+    background-color: rgba(91, 101, 111, 1);
+    width: 137px;
+    height: 48px;
+    margin-top: 10px;
+    padding: 12px 20px 12px 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.sendbtn:disabled {
+    background-color: rgba(91, 101, 111, 0.4);
+    cursor: not-allowed;
+}
+
+.form {
+    width: 100%;
+    max-width: 900px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 0 0 8px 0;
+    border: none;
+    border-bottom: 1px solid #888;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    color: #333;
+}
+
+.input-wrapper textarea {
+    width: 100%;
+    padding: 0 0 8px 0;
+    border: none;
+    border-bottom: 1px solid #888;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    resize: vertical;
+    min-height: 60px;
+    color: #333;
+}
+
+.input-wrapper label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #777;
+    font-size: 16px;
+    transition: 0.2s ease all;
+    pointer-events: none;
+}
+
+.input-wrapper input:focus~label,
+.input-wrapper input:not(:placeholder-shown)~label,
+.input-wrapper textarea:focus~label,
+.input-wrapper textarea:not(:placeholder-shown)~label {
+    top: -18px;
+    font-size: 12px;
+    color: #888;
+}
+
+.input-wrapper input:focus,
+.input-wrapper textarea:focus {
+    border-bottom-color: #333;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+    accent-color: #555;
+    width: 16px;
+    height: 16px;
+}
+
+.checkbox-group label {
+    cursor: pointer;
+}
+
+.checkbox-group a {
+    color: blue;
+    text-decoration: none;
+}
+
+.checkbox-group a:hover {
+    color: blue;
+}
+
+.label-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
 .home-page-footer {
     width: 100%;
     height: 100vh;
     border: 2px solid red;
+    background-color: #DFE3E7;
+}
+
+.home-page-footer-wrapper {
+    width: 100%;
+    height: 99.5vh;
+    border: 2px solid black;
 }

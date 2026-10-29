@@ -14,6 +14,7 @@ body {
     display: flex;
     align-items: center;
     background-color: rgba(128, 128, 128, 1);
+    /* position: sticky; */
 }
 
 .about-nav-bar-wrapper {
@@ -22,6 +23,7 @@ body {
     padding-left: 14%;
     padding-right: 14%;
     justify-content: space-between;
+    /* position: sticky; */
 }
 
 .about-luxury-text-wrapper {
