@@ -4,15 +4,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <link rel="shortcut icon"
         href="https://cdn.vectorstock.com/i/1000v/34/96/real-estate-logo-house-roof-related-to-property-vector-26173496.jpg"
         type="image/x-icon">
-    <link rel="stylesheet" href="/CSS/villas.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Villa Details</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
 </head>
 
 <body>
-    <h1>Villas Page</h1>
+
+    <section class="contact-nav-bar">
+
+        <div class="contact-nav-bar-wrapper">
+
+            <div class="contact-luxury-text-wrapper">
+
+                <p class="contact-luxury-text">
+                    <a href="/HTML/index.html" class="no-underline">LUXURY RENTALS</a>
+                </p>
+
+            </div>
+
+            <div class="contact-navigations-wrapper">
+
+                <ul class="contact-navigations">
+
+                    <li class="contact-villas-text">
+                        <a href="/HTML/villas.html" class="no-underline">VILLAS</a>
+                    </li>
+
+                    <li class="contact-villas-text">
+                        <a href="/HTML/about.html" class="no-underline">ABOUT US</a>
+                    </li>
+
+                    <li class="contact-villas-text">
+                        <a href="/HTML/contact.html" class="no-underline">CONTACT</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div class="container">
+        <header class="villa-header">
+            <h1 id="villa-name">Villa Name</h1>
+            <div class="header-actions">
+                <span id="save-btn">SAVE <i class="icon-wrapper" data-icon="save"></i></span>
+                <span id="share-btn">SHARE <i class="icon-wrapper" data-icon="share"></i></span>
+            </div>
+        </header>
+
+        <div class="gallery">
+            <div class="main-img img-placeholder"><span id="price-tag">From €350 / daily</span></div>
+            <div class="side-imgs">
+                <div class="img-placeholder"></div>
+                <div class="img-placeholder"></div>
+                <div class="img-placeholder"></div>
+                <div class="img-placeholder"></div>
+            </div>
+        </div>
+
+        <div class="content-grid">
+
+            <div class="left-col">
+                <h2 id="location">Location</h2>
+
+                <div class="stats-row" id="stats-row">
+                </div>
+
+                <div class="check-in-out">
+                    <div>
+                        <h4>Check in</h4>
+                        <p>From 04:00</p>
+                    </div>
+                    <div>
+                        <h4>Check out</h4>
+                        <p>Until 11:00</p>
+                    </div>
+                </div>
+
+                <h3>Amenities</h3>
+                <div class="list-grid" id="amenities-list">
+                </div>
+
+                <h3>Distances</h3>
+                <div class="list-grid" id="distances-list">
+                </div>
+
+                <h3>Kitchen & dining</h3>
+                <div class="list-grid" id="kitchen-list">
+                </div>
+            </div>
+
+            <div class="right-col">
+                <div class="contact-box">
+                    <h2>Contact</h2>
+                    <ul class="contact-info">
+                        <li><i class="icon-wrapper" data-icon="phone"></i> +00 000 000 00</li>
+                        <li><i class="icon-wrapper" data-icon="mail"></i> info@gmail.com</li>
+                        <li><i class="icon-wrapper" data-icon="globe"></i> www.villawebsite.com</li>
+                    </ul>
+                    <p class="pref-method">Preferred contact method: Email<br>Language: English, Greek</p>
+                    <button class="btn-primary">GET AN OFFER</button>
+                    <p class="help-link">ASK US FOR HELP</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="location">
+        <div class="location-toggler-container">
+            <h2 class="location-title">Location</h2>
+            <div id="map"></div>
+        </div>
+    </section>
+
+
+
+    <script src="/JS/villas.js"></script>
+    <script src="/JS/scripts.js"></script>
 </body>
 
 </html>
