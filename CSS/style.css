@@ -236,7 +236,6 @@ li {
 .our-properties-specialties {
     width: 100%;
     height: 70vh;
-    border: 2px solid maroon;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -245,7 +244,6 @@ li {
 .our-properties-specialties-wrapper {
     width: 83%;
     height: 70%;
-    border: 2px solid navy;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -255,7 +253,6 @@ li {
 .our-properties-specialties-wrapper-top,
 .our-properties-specialties-wrapper-bottom {
     width: 100%;
-    border: 2px solid violet;
 }
 
 .our-properties-specialties-wrapper-top {
@@ -264,15 +261,18 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 36px;
+}
+
+.our-properties-specialties-wrapper-top h2 {
     font-family: "Rufina", serif;
+    font-size: 48px;
+    color: #181D24;
+    margin: 0;
+    font-weight: 700;
 }
 
 .our-properties-specialties-wrapper-bottom {
     flex: 1;
-}
-
-.our-properties-specialties-wrapper-bottom {
     display: flex;
     gap: 10px;
 }
@@ -283,12 +283,50 @@ li {
 .our-properties-specialties-wrapper-bottom-four,
 .our-properties-specialties-wrapper-bottom-five {
     flex: 3;
-    border: 2px solid chocolate;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    gap: 12px; 
+    text-align: center;
+    min-width: 0;
+}
+
+.our-properties-specialties-icon {
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 4px; 
+}
+
+.our-properties-specialties-title {
+    font-family: "Rufina", serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    color: #181D24;
+    white-space: nowrap; 
+}
+
+.our-properties-specialties-link {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-transform: lowercase;
+    color: #976F4B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; 
+    white-space: nowrap; 
 }
 
 .our-properties-specialties-wrapper-bottom-line-container {
     flex: 0.3;
-    border: 2px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -296,8 +334,8 @@ li {
 }
 
 .our-properties-specialties-wrapper-bottom-line {
-    width: 2px;
-    height: 100%;
+    width: 1px;
+    height: 80%;
     background-color: #C9BDAB;
 }
 
