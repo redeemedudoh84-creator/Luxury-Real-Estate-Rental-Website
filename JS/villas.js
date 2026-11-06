@@ -1,4 +1,4 @@
-// 1. The SVG Vector Library
+
 const SVG_ICONS = {
     // Header
     save: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>`,
@@ -177,35 +177,3 @@ const villasData = {
     }
 };
 
-document.addEventListener('DOMContentLoaded', function () {
-    const map = L.map('map').setView([40.7128, -74.0060], 13);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '© OpenStreetMap contributors'
-    }).addTo(map);
-
-    const toggleIconHtml = `
-    <div class="custom-toggle-marker">
-      <div class="inner-circle"></div>
-    </div>
-  `;
-
-    const toggleIcon = L.divIcon({
-        className: 'custom-toggle-icon',
-        html: toggleIconHtml,
-        iconSize: [40, 40],
-        iconAnchor: [20, 20],
-        popupAnchor: [0, -20]
-    });
-
-    const marker = L.marker([40.7128, -74.0060], {
-        icon: toggleIcon,
-        draggable: true
-    }).addTo(map);
-
-    marker.bindPopup("<b>Selected Location</b>").openPopup();
-    map.on('click', function (e) {
-        marker.setLatLng(e.latlng);
-        marker.openPopup();
-    });
-});

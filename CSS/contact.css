@@ -423,13 +423,13 @@ li {
 
 .contact-section-down {
     width: 100%;
-    border: 2px solid brown;
+    /* border: 2px solid brown; */
 }
 
 .contact-form-wrapper {
     width: 100%;
     height: 100vh;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -449,7 +449,7 @@ li {
     gap: 10px;
     padding: 70px 0px 0px 70px;
     background-color: #FFFFFF;
-    border: 2px solid lawngreen;
+    /* border: 2px solid lawngreen; */
 }
 
 .contact-form-top,
@@ -589,4 +589,157 @@ li {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
+}
+
+.contact-footer-section {
+    background-color: #DFE3E7;
+    max-width: 100%;
+    height: 100vh;
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-footer-section-wrapper {
+    width: 83%;
+    height: 90%;
+    /* border: 2px dashed navy; */
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-footer-section-wrapper-top {
+    width: 100%;
+    /* border: 2px solid black; */
+    height: 50%;
+}
+
+.contact-footer-section-wrapper-bottom {
+    width: 100%;
+    /* border: 2px solid magenta; */
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-footer-section-wrapper-bottom-left {
+    width: 60%;
+    height: 100%;
+    /* border: 2px solid gold; */
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-footer-section-wrapper-bottom-right {
+    width: 32%;
+    height: 100%;
+    /* border: 2px solid greenyellow; */
+}
+
+.contact-footer-section-wrapper-bottom-left-top,
+.contact-footer-section-wrapper-bottom-left-middle,
+.contact-footer-section-wrapper-bottom-left-last {
+    width: 100%;
+    /* border: 2px solid indianred; */
+}
+
+.contact-footer-section-wrapper-bottom-left-top {
+    height: 20%;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 2px;
+    font-style: medium;
+    font-size: 20px;
+}
+
+.contact-footer-section-wrapper-bottom-left-middle {
+    height: 60%;
+    color: #5B656F;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+}
+
+.contact-footer-section-wrapper-bottom-left-last {
+    flex: 1;
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+}
+
+.contact-footer-section-wrapper-bottom-left-last>div:first-child {
+    align-items: center;
+}
+
+
+.contact-footer-section-wrapper-bottom-left-last>div {
+    width: 30%;
+    height: 100%;
+    display: flex;
+}
+
+.contact-footer-section-wrapper-bottom-left-last>div:not(:first-child) {
+    /* border: 2px solid red; */
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-footer-section-wrapper-bottom-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-footer-section-wrapper-bottom-right-one>div {
+    width: 100%;
+    flex: 1;
+    /* border: 2px solid blue; */
+}
+
+.contact-footer-section-wrapper-bottom-right-one {
+    height: 60%;
+    /* border: 2px solid mediumaquamarine; */
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-footer-section-wrapper-bottom-right-two {
+    height: 20%;
+    /* border: 2px solid mediumvioletred; */
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: regular;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    display: flex;
+    align-items: center;
+}
+
+.contact-footer-section-wrapper-bottom-right-one-top {
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    font-style: bold;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.contact-footer-section-wrapper-bottom-right-one-middle {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-style: medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.contact-footer-section-wrapper-bottom-right-one-end{
+    display: flex;
+    align-items: end;
 }
