@@ -7,7 +7,7 @@
 .nav-bar-plus-hero {
     background-image: url(/Images/hero-image.png);
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     border: 2px solid maroon;
     background-size: cover;
     background-position: center;
@@ -27,8 +27,64 @@
     width: 100%;
     flex: 1;
     /* height: fit-content; */
-    /* border: 2px solid lawngreen; */
+    border: 2px solid lawngreen;
     border-bottom-right-radius: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-hero-section-wrapper {
+    width: 83%;
+    /* border: 2px solid #181D24; */
+    height: 50%;
+}
+
+.home-hero-section-wrapper>div {
+    width: 100%;
+    /* border: 2px solid red; */
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-hero-section-wrapper-top-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    font-family: "Rufina", serif;
+    font-weight: 700;
+    font-style: bold;
+    letter-spacing: -1px;
+    line-height: 100px;
+    color: #FFFFFF;
+    text-shadow:
+        0px 1px 2px rgba(0, 0, 0, 0.6),
+        0px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.home-hero-subtitle-box {
+    background: rgba(255, 255, 255, 0.94);
+    width: fit-content;
+    max-width: 100%;
+    min-height: 48.9px;
+    border-radius: 5px;
+    padding: 9.95px 29.86px;
+    box-shadow: 0px 4.98px 49.77px 0px rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(201, 189, 171, 1);
 }
 
 .about-nav-bar {
@@ -94,8 +150,6 @@ li {
     text-decoration: none;
     color: white;
 }
-
-
 
 .our-regions {
     background-color: #C9BDAB;
@@ -285,19 +339,19 @@ li {
     flex: 3;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
-    gap: 12px; 
+    gap: 12px;
     text-align: center;
     min-width: 0;
 }
 
 .our-properties-specialties-icon {
-    width: 100%; 
+    width: 100%;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    margin-bottom: 4px; 
+    margin-bottom: 4px;
 }
 
 .our-properties-specialties-title {
@@ -307,7 +361,7 @@ li {
     line-height: 36px;
     letter-spacing: 1px;
     color: #181D24;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
 .our-properties-specialties-link {
@@ -321,8 +375,8 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px; 
-    white-space: nowrap; 
+    gap: 8px;
+    white-space: nowrap;
 }
 
 .our-properties-specialties-wrapper-bottom-line-container {
@@ -826,4 +880,3 @@ li {
     height: 99.5vh;
     border: 2px solid black;
 }
-
