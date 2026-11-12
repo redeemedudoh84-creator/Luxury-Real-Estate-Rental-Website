@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.contact-nav-bar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 1);
+}
+
+.contact-nav-bar-wrapper {
+    width: 100%;
+    display: flex;
+    padding-left: 14%;
+    padding-right: 14%;
+    justify-content: space-between;
+}
+
+.contact-luxury-text-wrapper {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+}
+
+.contact-luxury-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 6px;
+    font-weight: 500;
+    word-wrap: normal;
+    color: white;
+}
+
+.contact-navigations-wrapper {
+    display: flex;
+}
+
+.contact-navigations {
+    display: flex;
+    gap: 50px;
+}
+
+li {
+    list-style: none;
+}
+
+.contact-villas-text {
+    font-family: "Rufina", serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: white;
+}
+
+.no-underline {
+    text-decoration: none;
+    color: white;
+}

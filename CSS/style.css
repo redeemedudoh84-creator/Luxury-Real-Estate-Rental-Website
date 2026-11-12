@@ -6,7 +6,7 @@
 
 .nav-bar-plus-hero {
     position: relative;
-    background-image: url(/Images/hero-image.png);
+    background-image: url(/Images/Index/hero-image.png);
     width: 100%;
     height: 110vh;
     /* border: 2px solid maroon; */
@@ -772,7 +772,7 @@ li {
     height: 85vh;
     /* border: 2px solid turquoise; */
     border-bottom-right-radius: 150px;
-    background-image: url(/Images/becomeahost.png);
+    background-image: url(/Images/Index/becomeahost.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
