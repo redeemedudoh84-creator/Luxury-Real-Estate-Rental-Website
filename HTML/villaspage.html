@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -59,6 +60,177 @@
 
             </div>
 
+        </div>
+
+    </section>
+
+    <section class="hero">
+
+        <div class="hero__content">
+            <h1 class="hero__title">All Villas</h1>
+            <p class="hero__subtitle">13 results</p>
+        </div>
+
+        <div class="hero__search-container">
+            <div class="hero__search-bar">
+
+                <div class="hero__search-fields">
+                    <div class="hero__field">
+                        <div class="hero__field hero__field--location">
+                            <span class="hero__field-label">
+                                <i class="fa-solid fa-location-dot"></i>&nbsp;Location
+                            </span>
+                            <svg class="hero__dropdown-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="rgba(24, 29, 36, 1)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+
+                            <ul class="hero__dropdown-menu">
+                                <li class="hero__dropdown-item" data-value="Greece">Greece</li>
+                                <li class="hero__dropdown-item" data-value="Italy">Italy</li>
+                                <li class="hero__dropdown-item" data-value="France">France</li>
+                                <li class="hero__dropdown-item" data-value="Spain">Spain</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="hero__field">
+
+                        <div class="hero__field hero__field--dates">
+
+                            <span class="hero__field-label">
+                                <i class="fa-solid fa-calendar-days"></i>&nbsp;
+                                Dates
+                            </span>
+
+                            <svg class="hero__dropdown-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="rgba(24, 29, 36, 1)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+
+                            <div class="hero__calendar">
+
+                                <div class="hero__calendar-header">
+                                    <button type="button" class="hero__calendar-nav" id="prevMonth">&lt;</button>
+                                    <span class="hero__calendar-title" id="calendarTitle">Month Year</span>
+                                    <button type="button" class="hero__calendar-nav" id="nextMonth">&gt;</button>
+                                </div>
+
+                                <div class="hero__calendar-weekdays">
+                                    <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+                                </div>
+
+                                <div class="hero__calendar-days" id="calendarDays">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero__field">
+
+                        <div class="hero__field hero__field--guests">
+
+                            <span class="hero__field-label">
+                                <i class="fa-solid fa-user"></i>&nbsp;Guests
+                            </span>
+
+                            <svg class="hero__dropdown-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="rgba(24, 29, 36, 1)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+
+                            <div class="hero__counter">
+
+                                <div class="hero__counter-row">
+
+                                    <div class="hero__counter-info">
+                                        <span class="hero__counter-title">Adults</span>
+                                        <span class="hero__counter-subtitle">Ages 13 or above</span>
+                                    </div>
+
+                                    <div class="hero__counter-controls">
+                                        <button type="button" class="hero__counter-btn" id="btn-adults-minus"
+                                            disabled>-</button>
+
+                                        <span class="hero__counter-value" id="count-adults">1</span>
+                                        <button type="button" class="hero__counter-btn" id="btn-adults-plus">+</button>
+                                    </div>
+
+                                </div>
+
+                                <div class="hero__counter-divider"></div>
+
+                                <div class="hero__counter-row">
+                                    <div class="hero__counter-info">
+                                        <span class="hero__counter-title">Children</span>
+                                        <span class="hero__counter-subtitle">Ages 2–12</span>
+                                    </div>
+                                    <div class="hero__counter-controls">
+                                        <button type="button" class="hero__counter-btn" id="btn-children-minus"
+                                            disabled>-</button>
+                                        <span class="hero__counter-value" id="count-children">0</span>
+                                        <button type="button" class="hero__counter-btn"
+                                            id="btn-children-plus">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero__field">
+
+                        <div class="hero__field hero__field--price">
+                            <span class="hero__field-label">
+                                <i class="fa-solid fa-money-bill"></i>Price<i class="fa-solid fa-tag"></i>
+                            </span>
+
+                            <svg class="hero__dropdown-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="rgba(24, 29, 36, 1)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+
+                            <!-- SINGLE Price Slider Dropdown -->
+                            <div class="hero__price-dropdown">
+                                <!-- Helper Text -->
+                                <p class="hero__price-helper">Drag the slider to choose the price range</p>
+
+                                <div class="hero__slider-values">
+                                    <span id="price-min-text">€110</span>
+                                    <span id="price-max-text">€350</span>
+                                </div>
+
+                                <div class="hero__slider-container">
+                                    <div class="hero__slider-track" id="slider-track"></div>
+
+                                    <!-- Minimum Price Input -->
+                                    <input type="range" id="price-min" min="110" max="350" value="110" step="10">
+
+                                    <!-- Maximum Price Input -->
+                                    <input type="range" id="price-max" min="110" max="350" value="350" step="10">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="hero__search-button">
+                    <span class="hero__search-text">Search</span>
+                    <svg class="hero__search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+
+            </div>
+
+            <button class="hero__add-filters">ADD FILTERS</button>
         </div>
 
     </section>
@@ -217,7 +389,6 @@
         <div class="contact-footer-section-wrapper">
 
             <!-- <div class="contact-footer-section-wrapper-top">
-
             </div> -->
 
             <div class="contact-footer-section-wrapper-bottom">
@@ -326,7 +497,6 @@
             </div>
 
         </div>
-
 
     </footer>
 
