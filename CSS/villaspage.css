@@ -61,6 +61,8 @@ body {
     gap: 20px;
     width: 100%;
     max-width: 1148px;
+    position: relative;
+    z-index: 10;
     box-shadow:
         0px 4.39px 8.31px rgba(0, 0, 0, 0.0162),
         0px 14.74px 27.92px rgba(0, 0, 0, 0.0238),
@@ -539,13 +541,192 @@ body {
 }
 
 .hero__price-helper {
-  font-family: 'Raleway', sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  color: #888;
-  margin-bottom: 16px;
-  text-align: center;
-  font-style: italic;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #888;
+    margin-bottom: 16px;
+    text-align: center;
+    font-style: italic;
+}
+
+.hero__field-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hero__field-content i {
+    font-size: 16px;
+    color: rgba(24, 29, 36, 1);
+}
+
+.hero__filters-popup {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 1148px;
+    height: auto;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    padding: 20px 32px;
+    box-shadow: 0px 20px 0px 0px rgba(24, 29, 36, 0.72);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
+}
+
+.hero__filters-popup.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.hero__filters-popup-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+    margin-bottom: 20px;
+}
+
+.hero__filters-popup-title {
+    font-family: 'Rufina', serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 1px;
+    color: rgba(24, 29, 36, 1);
+}
+
+.hero__filters-popup-close {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: rgba(24, 29, 36, 1);
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.hero__filters-popup-close:hover {
+    background: #F5F5F5;
+}
+
+.hero__filters-popup-middle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.hero__filters-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hero__filters-heading {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(24, 29, 36, 1);
+    margin-bottom: 4px;
+}
+
+.hero__filters-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(24, 29, 36, 1);
+    cursor: pointer;
+    user-select: none;
+}
+
+.hero__filters-label input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgba(24, 29, 36, 0.6);
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.hero__filters-label input[type="checkbox"]:checked {
+    background-color: rgba(91, 101, 111, 1);
+    border-color: rgba(91, 101, 111, 1);
+}
+
+.hero__filters-label input[type="checkbox"]:checked::after {
+    content: '';
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin-bottom: 2px;
+}
+
+.hero__filters-popup-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #EAEAEA;
+    width: 100%;
+}
+
+.hero__filters-clear {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: rgba(91, 101, 111, 1);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 12px 0;
+}
+
+.hero__filters-clear:hover {
+    text-decoration: underline;
+}
+
+.hero__filters-show {
+    width: 169px;
+    height: 48px;
+    padding: 12px 20px;
+    background: rgba(91, 101, 111, 1);
+    border-radius: 10px;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.hero__filters-show:hover {
+    background: rgba(75, 85, 95, 1);
 }
 
 button {
