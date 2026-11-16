@@ -43,7 +43,7 @@
 
                     <div class="about-navigations-wrapper">
 
-                        <ul class="about-navigations">
+                        <!-- <ul class="about-navigations">
 
                             <li class="about-villas-text">
                                 <a href="/HTML/villaspage.html" class="no-underline">VILLAS</a>
@@ -57,6 +57,17 @@
                                 <a href="/HTML/contact.html" class="no-underline">CONTACT</a>
                             </li>
 
+                        </ul> -->
+
+                        <ul class="about-navigations">
+                            <li class="about-villas-text"><a href="/HTML/villaspage.html"
+                                    class="no-underline">VILLAS</a></li>
+                            <li class="about-villas-text"><a href="/HTML/about.html" class="no-underline">ABOUT US</a>
+                            </li>
+                            <li class="about-villas-text"><a href="/HTML/contact.html" class="no-underline">CONTACT</a>
+                            </li>
+                            <li class="about-villas-text"><a href="/HTML/saved-properties.html"
+                                    class="no-underline">SAVED</a></li>
                         </ul>
 
                     </div>
@@ -153,259 +164,463 @@
         </div>
 
         <div class="top-pick-villas__slider-wrapper">
-            <button class="top-pick-villas__nav-btn top-pick-villas__nav-btn--left" aria-label="Previous villas">
+            <button class="top-pick-villas__nav-btn top-pick-villas__nav-btn--left" aria-label="Previous villas"
+                disabled>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                     stroke-linecap="round" stroke-linejoin="round">
                     <path d="M15 18l-6-6 6-6" />
                 </svg>
             </button>
 
-            <div class="top-pick-villas__track">
+            <div class="top-pick-villas__track-wrapper" id="villasTrack">
+                <div class="top-pick-villas__track">
 
-                <article class="villa-card">
-                    <div class="villa-card__image-wrapper">
-                        <img src="/Images/Index/makarska-one.png" alt="Villa Makarska" class="villa-card__image"
-                            id="img-makarska">
-                        <div class="villa-card__overlay"></div>
-
-                        <div class="villa-card__badge">
-                            <span>From <strong>€280</strong> / daily</span>
-                        </div>
-
-                        <button class="villa-card__heart" aria-label="Add to favorites">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path
-                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                </path>
-                            </svg>
-                        </button>
-
-                        <div class="villa-card__pagination">
-                            <button class="villa-card__dot villa-card__dot--active" data-image="makarska-one.jpg"
-                                aria-label="Image 1"></button>
-                            <button class="villa-card__dot" data-image="makarska-two.jpg" aria-label="Image 2"></button>
-                            <button class="villa-card__dot" data-image="makarska-three.jpg"
-                                aria-label="Image 3"></button>
-                            <button class="villa-card__dot" data-image="makarska-four.jpg"
-                                aria-label="Image 4"></button>
-                        </div>
-                    </div>
-
-                    <div class="villa-card__content">
-                        <div class="villa-card__location">
-                            <span class="villa-card__country">Italy</span>
-                            <span class="villa-card__separator">•</span>
-                            <span class="villa-card__category">Mountains</span>
-                        </div>
-                        <h3 class="villa-card__name">Villa Makarska</h3>
-
-                        <div class="villa-card__amenities">
-                            <div class="villa-card__amenity">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="9" cy="7" r="4"></circle>
-                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                </svg>
-                                <span>8 guests</span>
-                            </div>
-                            <div class="villa-card__amenity">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M2 4v16"></path>
-                                    <path d="M2 8h18a2 2 0 0 1 2 2v10"></path>
-                                    <path d="M2 17h20"></path>
-                                    <path d="M6 8v9"></path>
-                                </svg>
-                                <span>8 bedrooms</span>
-                            </div>
-                            <div class="villa-card__amenity">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                    <path d="M9 15l6-6"></path>
-                                </svg>
-                                <span>460 m²</span>
-                            </div>
-                            <div class="villa-card__amenity">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- ===== CARD 1: Makarska ===== -->
+                    <article class="villa-card">
+                        <div class="villa-card__image-wrapper">
+                            <img src="/Images/Index/makarska-one.png" alt="Villa Makarska" class="villa-card__image">
+                            <div class="villa-card__overlay"></div>
+                            <div class="villa-card__badge"><span>From <strong>€280</strong> / daily</span></div>
+                            <button class="villa-card__heart" data-villa-id="makarska" data-villa-name="Villa Makarska"
+                                data-villa-location="Italy" data-villa-category="Mountains" data-villa-price="280"
+                                data-villa-image="/Images/Index/makarska-one.png" data-villa-guests="8"
+                                data-villa-bedrooms="8" data-villa-bathrooms="4" data-villa-sqm="460"
+                                aria-label="Add Villa Makarska to favorites">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                                     <path
-                                        d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3">
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                                     </path>
-                                    <line x1="10" y1="5" x2="8" y2="7"></line>
-                                    <line x1="2" y1="12" x2="22" y2="12"></line>
-                                    <line x1="7" y1="19" x2="7" y2="21"></line>
-                                    <line x1="17" y1="19" x2="17" y2="21"></line>
                                 </svg>
-                                <span>4 bathrooms</span>
+                            </button>
+                            <div class="villa-card__pagination">
+                                <button class="villa-card__dot villa-card__dot--active"
+                                    data-image="/Images/Index/makarska-one.png" aria-label="Image 1"></button>
+                                <button class="villa-card__dot" data-image="/Images/Index/makarska-two.jpg"
+                                    aria-label="Image 2"></button>
+                                <button class="villa-card__dot" data-image="/Images/Index/makarska-three.jpg"
+                                    aria-label="Image 3"></button>
+                                <button class="villa-card__dot" data-image="/Images/Index/makarska-four.jpg"
+                                    aria-label="Image 4"></button>
                             </div>
                         </div>
-                    </div>
-                </article>
-
-                <article class="villa-card">
-                    <div class="villa-card__image-wrapper">
-                        <img src="/Images/Index/roxane-one.png" alt="Villa Roxane" class="villa-card__image">
-                        <div class="villa-card__overlay"></div>
-
-                        <div class="villa-card__badge">
-                            <span>From <strong>€110</strong> / daily</span>
-                        </div>
-
-                        <button class="villa-card__heart" aria-label="Add to favorites">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path
-                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                </path>
-                            </svg>
-                        </button>
-
-                        <div class="villa-card__pagination">
-                            <button class="villa-card__dot villa-card__dot--active"></button>
-                            <button class="villa-card__dot"></button>
-                            <button class="villa-card__dot"></button>
-                            <button class="villa-card__dot"></button>
-                        </div>
-                    </div>
-
-                    <div class="villa-card__content">
-                        <div class="villa-card__location">
-                            <span class="villa-card__country">Greece</span>
-                            <span class="villa-card__separator">•</span>
-                            <span class="villa-card__category">Seaside</span>
-                        </div>
-                        <h3 class="villa-card__name">Villa Roxane</h3>
-
-                        <div class="villa-card__amenities">
-                            <div class="villa-card__amenity">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="9" cy="7" r="4"></circle>
-                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                </svg>
-                                <span>11 guests</span>
+                        <div class="villa-card__content">
+                            <div class="villa-card__location">
+                                <span class="villa-card__country">Italy</span>
+                                <span class="villa-card__separator">•</span>
+                                <span class="villa-card__category">Mountains</span>
                             </div>
-                            <div class="villa-card__amenity">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M2 4v16"></path>
-                                    <path d="M2 8h18a2 2 0 0 1 2 2v10"></path>
-                                    <path d="M2 17h20"></path>
-                                    <path d="M6 8v9"></path>
-                                </svg>
-                                <span>6 bedrooms</span>
+                            <h3 class="villa-card__name">Villa Makarska</h3>
+                            <div class="villa-card__amenities">
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg><span>8 guests</span></div>
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M2 4v16"></path>
+                                        <path d="M2 8h18a2 2 0 0 1 2 2v10"></path>
+                                        <path d="M2 17h20"></path>
+                                        <path d="M6 8v9"></path>
+                                    </svg><span>8 bedrooms</span></div>
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                        <path d="M9 15l6-6"></path>
+                                    </svg><span>460 m²</span></div>
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3">
+                                        </path>
+                                        <line x1="10" y1="5" x2="8" y2="7"></line>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <line x1="7" y1="19" x2="7" y2="21"></line>
+                                        <line x1="17" y1="19" x2="17" y2="21"></line>
+                                    </svg><span>4 bathrooms</span></div>
                             </div>
-                            <div class="villa-card__amenity">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                    <path d="M9 15l6-6"></path>
-                                </svg>
-                                <span>120 m²</span>
-                            </div>
-                            <div class="villa-card__amenity">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        </div>
+                    </article>
+
+                    <!-- ===== CARD 2: Roxane ===== -->
+                    <article class="villa-card">
+                        <div class="villa-card__image-wrapper">
+                            <img src="/Images/Index/roxane-one.png" alt="Villa Roxane" class="villa-card__image">
+                            <div class="villa-card__overlay"></div>
+                            <div class="villa-card__badge"><span>From <strong>€110</strong> / daily</span></div>
+                            <button class="villa-card__heart" data-villa-id="roxane" data-villa-name="Villa Roxane"
+                                data-villa-location="Greece" data-villa-category="Seaside" data-villa-price="110"
+                                data-villa-image="/Images/Index/roxane-one.png" data-villa-guests="11"
+                                data-villa-bedrooms="6" data-villa-bathrooms="25" data-villa-sqm="120"
+                                aria-label="Add Villa Roxane to favorites">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                                     <path
-                                        d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3">
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                                     </path>
-                                    <line x1="10" y1="5" x2="8" y2="7"></line>
-                                    <line x1="2" y1="12" x2="22" y2="12"></line>
-                                    <line x1="7" y1="19" x2="7" y2="21"></line>
-                                    <line x1="17" y1="19" x2="17" y2="21"></line>
                                 </svg>
-                                <span>25 bathrooms</span>
+                            </button>
+                            <div class="villa-card__pagination">
+                                <button class="villa-card__dot villa-card__dot--active"
+                                    data-image="/Images/Index/roxane-one.png" aria-label="Image 1"></button>
+                                <button class="villa-card__dot" data-image="/Images/Index/roxane-two.jpg"
+                                    aria-label="Image 2"></button>
+                                <button class="villa-card__dot" data-image="/Images/Index/roxane-three.jpg"
+                                    aria-label="Image 3"></button>
+                                <button class="villa-card__dot" data-image="/Images/Index/roxane-four.jpg"
+                                    aria-label="Image 4"></button>
                             </div>
                         </div>
-                    </div>
-                </article>
-
-                <article class="villa-card">
-                    <div class="villa-card__image-wrapper">
-                        <img src="/Images/Index/aphrodite-one.png" alt="Aphrodite" class="villa-card__image">
-                        <div class="villa-card__overlay"></div>
-
-                        <div class="villa-card__badge">
-                            <span>From <strong>€240</strong> / daily</span>
-                        </div>
-
-                        <button class="villa-card__heart" aria-label="Add to favorites">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path
-                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                </path>
-                            </svg>
-                        </button>
-
-                        <div class="villa-card__pagination">
-                            <button class="villa-card__dot villa-card__dot--active"></button>
-                            <button class="villa-card__dot"></button>
-                            <button class="villa-card__dot"></button>
-                            <button class="villa-card__dot"></button>
-                        </div>
-                    </div>
-
-                    <div class="villa-card__content">
-                        <div class="villa-card__location">
-                            <span class="villa-card__country">Greece</span>
-                            <span class="villa-card__separator">•</span>
-                            <span class="villa-card__category">Seaside</span>
-                        </div>
-                        <h3 class="villa-card__name">Villa Aphrodite</h3>
-
-                        <div class="villa-card__amenities">
-                            <div class="villa-card__amenity">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="9" cy="7" r="4"></circle>
-                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                </svg>
-                                <span>12 guests</span>
+                        <div class="villa-card__content">
+                            <div class="villa-card__location">
+                                <span class="villa-card__country">Greece</span>
+                                <span class="villa-card__separator">•</span>
+                                <span class="villa-card__category">Seaside</span>
                             </div>
-                            <div class="villa-card__amenity">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M2 4v16"></path>
-                                    <path d="M2 8h18a2 2 0 0 1 2 2v10"></path>
-                                    <path d="M2 17h20"></path>
-                                    <path d="M6 8v9"></path>
-                                </svg>
-                                <span>6 bedrooms</span>
+                            <h3 class="villa-card__name">Villa Roxane</h3>
+                            <div class="villa-card__amenities">
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg><span>11 guests</span></div>
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M2 4v16"></path>
+                                        <path d="M2 8h18a2 2 0 0 1 2 2v10"></path>
+                                        <path d="M2 17h20"></path>
+                                        <path d="M6 8v9"></path>
+                                    </svg><span>6 bedrooms</span></div>
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                        <path d="M9 15l6-6"></path>
+                                    </svg><span>120 m²</span></div>
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3">
+                                        </path>
+                                        <line x1="10" y1="5" x2="8" y2="7"></line>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <line x1="7" y1="19" x2="7" y2="21"></line>
+                                        <line x1="17" y1="19" x2="17" y2="21"></line>
+                                    </svg><span>25 bathrooms</span></div>
                             </div>
-                            <div class="villa-card__amenity">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                    <path d="M9 15l6-6"></path>
-                                </svg>
-                                <span>460 m²</span>
-                            </div>
-                            <div class="villa-card__amenity">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        </div>
+                    </article>
+
+                    <!-- ===== CARD 3: Aphrodite ===== -->
+                    <article class="villa-card">
+                        <div class="villa-card__image-wrapper">
+                            <img src="/Images/Index/aphrodite-one.png" alt="Villa Aphrodite" class="villa-card__image">
+                            <div class="villa-card__overlay"></div>
+                            <div class="villa-card__badge"><span>From <strong>€240</strong> / daily</span></div>
+                            <button class="villa-card__heart" data-villa-id="aphrodite"
+                                data-villa-name="Villa Aphrodite" data-villa-location="Greece"
+                                data-villa-category="Seaside" data-villa-price="240"
+                                data-villa-image="/Images/Index/aphrodite-one.png" data-villa-guests="12"
+                                data-villa-bedrooms="6" data-villa-bathrooms="5" data-villa-sqm="460"
+                                aria-label="Add Villa Aphrodite to favorites">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                                     <path
-                                        d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3">
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                                     </path>
-                                    <line x1="10" y1="5" x2="8" y2="7"></line>
-                                    <line x1="2" y1="12" x2="22" y2="12"></line>
-                                    <line x1="7" y1="19" x2="7" y2="21"></line>
-                                    <line x1="17" y1="19" x2="17" y2="21"></line>
                                 </svg>
-                                <span>5 bathrooms</span>
+                            </button>
+                            <div class="villa-card__pagination">
+                                <button class="villa-card__dot villa-card__dot--active"
+                                    data-image="/Images/Index/aphrodite-one.png" aria-label="Image 1"></button>
+                                <button class="villa-card__dot" data-image="/Images/Index/aphrodite-two.jpg"
+                                    aria-label="Image 2"></button>
+                                <button class="villa-card__dot" data-image="/Images/Index/aphrodite-three.jpg"
+                                    aria-label="Image 3"></button>
+                                <button class="villa-card__dot" data-image="/Images/Index/aphrodite-four.jpg"
+                                    aria-label="Image 4"></button>
                             </div>
                         </div>
-                    </div>
-                </article>
+                        <div class="villa-card__content">
+                            <div class="villa-card__location">
+                                <span class="villa-card__country">Greece</span>
+                                <span class="villa-card__separator">•</span>
+                                <span class="villa-card__category">Seaside</span>
+                            </div>
+                            <h3 class="villa-card__name">Villa Aphrodite</h3>
+                            <div class="villa-card__amenities">
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg><span>12 guests</span></div>
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M2 4v16"></path>
+                                        <path d="M2 8h18a2 2 0 0 1 2 2v10"></path>
+                                        <path d="M2 17h20"></path>
+                                        <path d="M6 8v9"></path>
+                                    </svg><span>6 bedrooms</span></div>
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                        <path d="M9 15l6-6"></path>
+                                    </svg><span>460 m²</span></div>
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3">
+                                        </path>
+                                        <line x1="10" y1="5" x2="8" y2="7"></line>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <line x1="7" y1="19" x2="7" y2="21"></line>
+                                        <line x1="17" y1="19" x2="17" y2="21"></line>
+                                    </svg><span>5 bathrooms</span></div>
+                            </div>
+                        </div>
+                    </article>
 
+                    <!-- ===== CARD 4: Soho ===== -->
+                    <article class="villa-card">
+                        <div class="villa-card__image-wrapper">
+                            <img src="/Images/Index/soho-one.jpg" alt="Villa Soho" class="villa-card__image">
+                            <div class="villa-card__overlay"></div>
+                            <div class="villa-card__badge"><span>From <strong>€350</strong> / daily</span></div>
+                            <button class="villa-card__heart" data-villa-id="soho" data-villa-name="Villa Soho"
+                                data-villa-location="Italy" data-villa-category="Town" data-villa-price="350"
+                                data-villa-image="/Images/Index/soho-one.jpg" data-villa-guests="8"
+                                data-villa-bedrooms="6" data-villa-bathrooms="6" data-villa-sqm="270"
+                                aria-label="Add Villa Soho to favorites">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                    </path>
+                                </svg>
+                            </button>
+                            <div class="villa-card__pagination">
+                                <button class="villa-card__dot villa-card__dot--active"
+                                    data-image="/Images/Index/soho-one.jpg" aria-label="Image 1"></button>
+                                <button class="villa-card__dot" data-image="/Images/Index/soho-two.jpg"
+                                    aria-label="Image 2"></button>
+                                <button class="villa-card__dot" data-image="/Images/Index/soho-three.jpg"
+                                    aria-label="Image 3"></button>
+                                <button class="villa-card__dot" data-image="/Images/Index/soho-four.jpg"
+                                    aria-label="Image 4"></button>
+                            </div>
+                        </div>
+                        <div class="villa-card__content">
+                            <div class="villa-card__location">
+                                <span class="villa-card__country">Italy</span>
+                                <span class="villa-card__separator">•</span>
+                                <span class="villa-card__category">Town</span>
+                            </div>
+                            <h3 class="villa-card__name">Villa Soho</h3>
+                            <div class="villa-card__amenities">
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg><span>8 guests</span></div>
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M2 4v16"></path>
+                                        <path d="M2 8h18a2 2 0 0 1 2 2v10"></path>
+                                        <path d="M2 17h20"></path>
+                                        <path d="M6 8v9"></path>
+                                    </svg><span>6 bedrooms</span></div>
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                        <path d="M9 15l6-6"></path>
+                                    </svg><span>270 m²</span></div>
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3">
+                                        </path>
+                                        <line x1="10" y1="5" x2="8" y2="7"></line>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <line x1="7" y1="19" x2="7" y2="21"></line>
+                                        <line x1="17" y1="19" x2="17" y2="21"></line>
+                                    </svg><span>6 bathrooms</span></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ===== CARD 5: Thebes ===== -->
+                    <article class="villa-card">
+                        <div class="villa-card__image-wrapper">
+                            <img src="/Images/Index/thebes-one.jpg" alt="Villa Thebes" class="villa-card__image">
+                            <div class="villa-card__overlay"></div>
+                            <div class="villa-card__badge"><span>From <strong>€200</strong> / daily</span></div>
+                            <button class="villa-card__heart" data-villa-id="thebes" data-villa-name="Villa Thebes"
+                                data-villa-location="Greece" data-villa-category="Countryside" data-villa-price="200"
+                                data-villa-image="/Images/Index/thebes-one.jpg" data-villa-guests="8"
+                                data-villa-bedrooms="4" data-villa-bathrooms="3" data-villa-sqm="220"
+                                aria-label="Add Villa Thebes to favorites">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                    </path>
+                                </svg>
+                            </button>
+                            <div class="villa-card__pagination">
+                                <button class="villa-card__dot villa-card__dot--active"
+                                    data-image="/Images/Index/thebes-one.jpg" aria-label="Image 1"></button>
+                                <button class="villa-card__dot" data-image="/Images/Index/thebes-two.jpg"
+                                    aria-label="Image 2"></button>
+                                <button class="villa-card__dot" data-image="/Images/Index/thebes-three.jpg"
+                                    aria-label="Image 3"></button>
+                                <button class="villa-card__dot" data-image="/Images/Index/thebes-four.jpg"
+                                    aria-label="Image 4"></button>
+                            </div>
+                        </div>
+                        <div class="villa-card__content">
+                            <div class="villa-card__location">
+                                <span class="villa-card__country">Greece</span>
+                                <span class="villa-card__separator">•</span>
+                                <span class="villa-card__category">Countryside</span>
+                            </div>
+                            <h3 class="villa-card__name">Villa Thebes</h3>
+                            <div class="villa-card__amenities">
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg><span>8 guests</span></div>
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M2 4v16"></path>
+                                        <path d="M2 8h18a2 2 0 0 1 2 2v10"></path>
+                                        <path d="M2 17h20"></path>
+                                        <path d="M6 8v9"></path>
+                                    </svg><span>4 bedrooms</span></div>
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                        <path d="M9 15l6-6"></path>
+                                    </svg><span>220 m²</span></div>
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3">
+                                        </path>
+                                        <line x1="10" y1="5" x2="8" y2="7"></line>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <line x1="7" y1="19" x2="7" y2="21"></line>
+                                        <line x1="17" y1="19" x2="17" y2="21"></line>
+                                    </svg><span>3 bathrooms</span></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ===== CARD 6: Aura ===== -->
+                    <article class="villa-card">
+                        <div class="villa-card__image-wrapper">
+                            <img src="/Images/Index/aura-one.jpg" alt="Villa Aura" class="villa-card__image">
+                            <div class="villa-card__overlay"></div>
+                            <div class="villa-card__badge"><span>From <strong>€180</strong> / daily</span></div>
+                            <button class="villa-card__heart" data-villa-id="aura" data-villa-name="Villa Aura"
+                                data-villa-location="Italy" data-villa-category="Village" data-villa-price="180"
+                                data-villa-image="/Images/Index/aura-one.jpg" data-villa-guests="4"
+                                data-villa-bedrooms="2" data-villa-bathrooms="2" data-villa-sqm="110"
+                                aria-label="Add Villa Aura to favorites">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                    </path>
+                                </svg>
+                            </button>
+                            <div class="villa-card__pagination">
+                                <button class="villa-card__dot villa-card__dot--active"
+                                    data-image="/Images/Index/aura-one.jpg" aria-label="Image 1"></button>
+                                <button class="villa-card__dot" data-image="/Images/Index/aura-two.jpg"
+                                    aria-label="Image 2"></button>
+                                <button class="villa-card__dot" data-image="/Images/Index/aura-three.jpg"
+                                    aria-label="Image 3"></button>
+                                <button class="villa-card__dot" data-image="/Images/Index/aura-four.jpg"
+                                    aria-label="Image 4"></button>
+                            </div>
+                        </div>
+                        <div class="villa-card__content">
+                            <div class="villa-card__location">
+                                <span class="villa-card__country">Italy</span>
+                                <span class="villa-card__separator">•</span>
+                                <span class="villa-card__category">Village</span>
+                            </div>
+                            <h3 class="villa-card__name">Villa Aura</h3>
+                            <div class="villa-card__amenities">
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg><span>4 guests</span></div>
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M2 4v16"></path>
+                                        <path d="M2 8h18a2 2 0 0 1 2 2v10"></path>
+                                        <path d="M2 17h20"></path>
+                                        <path d="M6 8v9"></path>
+                                    </svg><span>2 bedrooms</span></div>
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                        <path d="M9 15l6-6"></path>
+                                    </svg><span>110 m²</span></div>
+                                <div class="villa-card__amenity"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3">
+                                        </path>
+                                        <line x1="10" y1="5" x2="8" y2="7"></line>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <line x1="7" y1="19" x2="7" y2="21"></line>
+                                        <line x1="17" y1="19" x2="17" y2="21"></line>
+                                    </svg><span>2 bathrooms</span></div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
             </div>
 
             <button class="top-pick-villas__nav-btn top-pick-villas__nav-btn--right" aria-label="Next villas">
@@ -921,7 +1136,6 @@
         </div>
 
     </footer>
-
 
     <script src="/JS/script.js"></script>
 </body>

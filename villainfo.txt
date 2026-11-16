@@ -1,0 +1,111 @@
+
+
+Got it. You just want the raw, readable data so you can reference it, put it in a spreadsheet, or use it for your CMS. 
+
+Here is the complete breakdown of all 13 villas in plain text. 
+
+*(Note: The 5 "Master Villas" have every single amenity listed. The other 8 have curated lists. All villas share the exact same Distances and Kitchen lists).*
+
+***
+
+### ?? THE 5 MASTER VILLAS (Complete Features)
+
+**1. Villa SOHO**
+*   **Location:** Town
+*   **Price:** From €350 / daily
+*   **Stats:** 8 guests | 6 bedrooms | 6 bathrooms | 270m²
+*   **Amenities (22):** Swimming pool, Indoor pool, Jacuzzi, Fitness/Gym, Sauna, Outdoor dining table, Outdoor grill, Boat mooring, Electric car charger, Private parking, Playground, Playstation, Satellite/Cable, Table tennis, Fireplace, Air conditioning, Feeding chair, Iron & Board, Wi-Fi, Towels, Toiletries, Hair dryer.
+*   **Distances:** Sea (2 km), City (4 km), Market (0.5 km), Airport (30 km), Restaurant (0.2 km), Ambulance (4 km), Beach (2 km), Hospital (5 km).
+*   **Kitchen:** Plates, Refrigerator, Cooking utensils, Dishwasher, Coffee machine, Oven.
+
+**2. Villa Roxane**
+*   **Location:** Seaside
+*   **Price:** From €110 / daily
+*   **Stats:** 11 guests | 6 bedrooms | 2.5 bathrooms | 120m²
+*   **Amenities (22):** Swimming pool, Indoor pool, Jacuzzi, Fitness/Gym, Sauna, Outdoor dining table, Outdoor grill, Boat mooring, Electric car charger, Private parking, Playground, Playstation, Satellite/Cable, Table tennis, Fireplace, Air conditioning, Feeding chair, Iron & Board, Wi-Fi, Towels, Toiletries, Hair dryer.
+*   **Distances:** Sea (2 km), City (4 km), Market (0.5 km), Airport (30 km), Restaurant (0.2 km), Ambulance (4 km), Beach (2 km), Hospital (5 km).
+*   **Kitchen:** Plates, Refrigerator, Cooking utensils, Dishwasher, Coffee machine, Oven.
+
+**3. Villa Makarska**
+*   **Location:** Mountains
+*   **Price:** From €240 / daily
+*   **Stats:** 8 guests | 8 bedrooms | 4 bathrooms | 460m²
+*   **Amenities (22):** Swimming pool, Indoor pool, Jacuzzi, Fitness/Gym, Sauna, Outdoor dining table, Outdoor grill, Boat mooring, Electric car charger, Private parking, Playground, Playstation, Satellite/Cable, Table tennis, Fireplace, Air conditioning, Feeding chair, Iron & Board, Wi-Fi, Towels, Toiletries, Hair dryer.
+*   **Distances:** Sea (2 km), City (4 km), Market (0.5 km), Airport (30 km), Restaurant (0.2 km), Ambulance (4 km), Beach (2 km), Hospital (5 km).
+*   **Kitchen:** Plates, Refrigerator, Cooking utensils, Dishwasher, Coffee machine, Oven.
+
+**4. Villa Aura**
+*   **Location:** Village
+*   **Price:** From €180 / daily
+*   **Stats:** 4 guests | 2 bedrooms | 2 bathrooms | 110m²
+*   **Amenities (22):** Swimming pool, Indoor pool, Jacuzzi, Fitness/Gym, Sauna, Outdoor dining table, Outdoor grill, Boat mooring, Electric car charger, Private parking, Playground, Playstation, Satellite/Cable, Table tennis, Fireplace, Air conditioning, Feeding chair, Iron & Board, Wi-Fi, Towels, Toiletries, Hair dryer.
+*   **Distances:** Sea (2 km), City (4 km), Market (0.5 km), Airport (30 km), Restaurant (0.2 km), Ambulance (4 km), Beach (2 km), Hospital (5 km).
+*   **Kitchen:** Plates, Refrigerator, Cooking utensils, Dishwasher, Coffee machine, Oven.
+
+**5. Villa Thebes**
+*   **Location:** Countryside
+*   **Price:** From €200 / daily
+*   **Stats:** 8 guests | 4 bedrooms | 3 bathrooms | 220m²
+*   **Amenities (22):** Swimming pool, Indoor pool, Jacuzzi, Fitness/Gym, Sauna, Outdoor dining table, Outdoor grill, Boat mooring, Electric car charger, Private parking, Playground, Playstation, Satellite/Cable, Table tennis, Fireplace, Air conditioning, Feeding chair, Iron & Board, Wi-Fi, Towels, Toiletries, Hair dryer.
+*   **Distances:** Sea (2 km), City (4 km), Market (0.5 km), Airport (30 km), Restaurant (0.2 km), Ambulance (4 km), Beach (2 km), Hospital (5 km).
+*   **Kitchen:** Plates, Refrigerator, Cooking utensils, Dishwasher, Coffee machine, Oven.
+
+***
+
+### ?? THE 8 STANDARD VILLAS (Curated Features)
+
+**6. Villa Luna**
+*   **Location:** Seaside
+*   **Price:** From €350 / daily
+*   **Stats:** 11 guests | 6 bedrooms | 2.5 bathrooms | 120m²
+*   **Amenities (11):** Swimming pool, Outdoor dining table, Playstation, Satellite/Cable, Air conditioning, Iron & Board, Fireplace, Wi-Fi, Towels, Toiletries, Hair dryer.
+*   **Distances & Kitchen:** (Standard lists)
+
+**7. Villa Aphrodite**
+*   **Location:** Seaside
+*   **Price:** From €240 / daily
+*   **Stats:** 12 guests | 6 bedrooms | 5 bathrooms | 460m²
+*   **Amenities (11):** Indoor pool, Sauna, Fitness/Gym, Electric car charger, Table tennis, Feeding chair, Air conditioning, Wi-Fi, Towels, Toiletries, Hair dryer.
+*   **Distances & Kitchen:** (Standard lists)
+
+**8. Villa White Lady**
+*   **Location:** Seaside
+*   **Price:** From €110 / daily
+*   **Stats:** 11 guests | 6 bedrooms | 2.5 bathrooms | 120m²
+*   **Amenities (10):** Swimming pool, Jacuzzi, Outdoor grill, Playground, Satellite/Cable, Iron & Board, Wi-Fi, Towels, Toiletries, Hair dryer.
+*   **Distances & Kitchen:** (Standard lists)
+
+**9. Villa Tosca**
+*   **Location:** Mountains
+*   **Price:** From €350 / daily
+*   **Stats:** 8 guests | 8 bedrooms | 4 bathrooms | 460m²
+*   **Amenities (11):** Jacuzzi, Fireplace, Outdoor grill, Private parking, Satellite/Cable, Iron & Board, Air conditioning, Wi-Fi, Towels, Toiletries, Hair dryer.
+*   **Distances & Kitchen:** (Standard lists)
+
+**10. Villa Sunset**
+*   **Location:** Mountains
+*   **Price:** From €240 / daily
+*   **Stats:** 8 guests | 8 bedrooms | 4 bathrooms | 460m²
+*   **Amenities (10):** Swimming pool, Outdoor dining table, Electric car charger, Playground, Air conditioning, Feeding chair, Wi-Fi, Towels, Toiletries, Hair dryer.
+*   **Distances & Kitchen:** (Standard lists)
+
+**11. Villa Florence**
+*   **Location:** Town
+*   **Price:** From €280 / daily
+*   **Stats:** 6 guests | 3 bedrooms | 2 bathrooms | 180m²
+*   **Amenities (10):** Fitness/Gym, Outdoor dining table, Electric car charger, Playstation, Air conditioning, Iron & Board, Wi-Fi, Towels, Toiletries, Hair dryer.
+*   **Distances & Kitchen:** (Standard lists)
+
+**12. Villa Verona**
+*   **Location:** Town
+*   **Price:** From €310 / daily
+*   **Stats:** 10 guests | 5 bedrooms | 4 bathrooms | 300m²
+*   **Amenities (11):** Indoor pool, Jacuzzi, Boat mooring, Playground, Satellite/Cable, Fireplace, Feeding chair, Wi-Fi, Towels, Toiletries, Hair dryer.
+*   **Distances & Kitchen:** (Standard lists)
+
+**13. Villa Vinea**
+*   **Location:** Village
+*   **Price:** From €150 / daily
+*   **Stats:** 6 guests | 3 bedrooms | 2 bathrooms | 140m²
+*   **Amenities (11):** Swimming pool, Sauna, Outdoor grill, Private parking, Table tennis, Satellite/Cable, Iron & Board, Wi-Fi, Towels, Toiletries, Hair dryer.
+*   **Distances & Kitchen:** (Standard lists)
