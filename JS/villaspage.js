@@ -122,8 +122,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     prevBtn.addEventListener('click', (e) => { e.stopPropagation(); currentMonth--; if (currentMonth < 0) { currentMonth = 11; currentYear--; } renderCalendar(); });
+
     nextBtn.addEventListener('click', (e) => { e.stopPropagation(); currentMonth++; if (currentMonth > 11) { currentMonth = 0; currentYear++; } renderCalendar(); });
+
     datesField.addEventListener('click', (e) => { if (e.target.closest('.hero__calendar')) return; toggleDropdown(datesField); });
+
     renderCalendar();
 
     const guestsField = document.querySelector('.hero__field--guests');
@@ -163,11 +166,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     btnAdultsPlus.addEventListener('click', (e) => { e.stopPropagation(); if (adults + children < maxGuests) { adults++; hasInteractedWithGuests = true; updateGuestUI(); } });
+
     btnAdultsMinus.addEventListener('click', (e) => { e.stopPropagation(); if (adults > 0) { adults--; hasInteractedWithGuests = true; updateGuestUI(); } });
+
     btnChildrenPlus.addEventListener('click', (e) => { e.stopPropagation(); if (adults + children < maxGuests) { children++; hasInteractedWithGuests = true; updateGuestUI(); } });
+
     btnChildrenMinus.addEventListener('click', (e) => { e.stopPropagation(); if (children > 0) { children--; hasInteractedWithGuests = true; updateGuestUI(); } });
 
     guestsField.addEventListener('click', (e) => { if (e.target.closest('.hero__counter')) return; toggleDropdown(guestsField); });
+
     updateGuestUI();
 
     const priceField = document.querySelector('.hero__field--price');
@@ -203,8 +210,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     priceMinInput.addEventListener('input', () => { if (parseInt(priceMinInput.value) > parseInt(priceMaxInput.value) - 10) priceMinInput.value = parseInt(priceMaxInput.value) - 10; hasInteractedWithPrice = true; updatePriceUI(); });
+
     priceMaxInput.addEventListener('input', () => { if (parseInt(priceMaxInput.value) < parseInt(priceMinInput.value) + 10) priceMaxInput.value = parseInt(priceMinInput.value) + 10; hasInteractedWithPrice = true; updatePriceUI(); });
+
     priceField.addEventListener('click', (e) => { if (e.target.closest('.hero__price-dropdown')) return; toggleDropdown(priceField); });
+    
     updatePriceUI();
 
     searchBtn.addEventListener('click', (e) => {

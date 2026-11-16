@@ -1128,11 +1128,10 @@ li {
     flex-direction: column;
 }
 
-.contact-footer-section-wrapper-top {
+/* .contact-footer-section-wrapper-top {
     width: 100%;
-    /* border: 2px solid black; */
     height: 50%;
-}
+} */
 
 .contact-footer-section-wrapper-bottom {
     width: 100%;
