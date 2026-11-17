@@ -68,7 +68,7 @@
 
         <div class="hero__content">
             <h1 class="hero__title">All Villas</h1>
-            <p class="hero__subtitle">13 results</p>
+            <p class="hero__subtitle" id="resultsSubtitle">13 results</p>
         </div>
 
         <div class="hero__search-container">
@@ -283,10 +283,30 @@
 
                 <div class="hero__filters-popup-bottom">
                     <button class="hero__filters-clear" id="clearFilters">Clear All</button>
-                    <button class="hero__filters-show" id="showVillas">Show 24 villas</button>
+                    <button class="hero__filters-show" id="showVillas">Show results</button>
                 </div>
 
             </div>
+        </div>
+
+    </section>
+
+    <section class="villas-results">
+
+        <div class="villas-results__inner">
+
+            <div class="villas-results__header">
+                <h2 class="villas-results__title" id="resultsTitle">All Villas</h2>
+                <p class="villas-results__count" id="resultsCount">13 villas</p>
+            </div>
+
+            <div class="villas-results__grid" id="villasGrid"></div>
+
+            <div class="villas-results__empty" id="villasEmpty" hidden>
+                <p>No villas match your search. Try adjusting your filters.</p>
+                <button type="button" id="resetSearchBtn">Reset search</button>
+            </div>
+
         </div>
 
     </section>
@@ -556,6 +576,8 @@
 
     </footer>
 
+    <script src="/JS/villas-data.js"></script>
+    <script src="/JS/search-bar.js"></script>
     <script src="/JS/villaspage.js"></script>
 </body>
 

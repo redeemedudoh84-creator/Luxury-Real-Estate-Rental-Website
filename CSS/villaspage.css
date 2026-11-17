@@ -729,6 +729,130 @@ body {
     background: rgba(75, 85, 95, 1);
 }
 
+.villas-results {
+    width: 100%;
+    padding: 60px 7% 100px;
+    background: #FFFFFF;
+}
+
+.villas-results__inner {
+    max-width: 1257px;
+    margin: 0 auto;
+}
+
+.villas-results__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.villas-results__title {
+    font-family: 'Rufina', serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: rgba(24, 29, 36, 1);
+}
+
+.villas-results__count {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #5B656F;
+}
+
+.villas-results__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 32px;
+}
+
+.villas-results__card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.villas-results__card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.10);
+}
+
+.villas-results__card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.villas-results__card-image {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    background-color: #DFE3E7;
+}
+
+.villas-results__card-body {
+    padding: 18px 20px 22px;
+}
+
+.villas-results__card-title {
+    font-family: 'Rufina', serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: rgba(24, 29, 36, 1);
+    margin-bottom: 6px;
+}
+
+.villas-results__card-meta {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #5B656F;
+    margin-bottom: 12px;
+}
+
+.villas-results__card-price {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(24, 29, 36, 1);
+}
+
+.villas-results__empty {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.villas-results__empty p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #5B656F;
+    margin-bottom: 20px;
+}
+
+.villas-results__empty button {
+    padding: 12px 20px;
+    border-radius: 10px;
+    background: rgba(91, 101, 111, 1);
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.villas-results__empty button:hover {
+    background: rgba(75, 85, 95, 1);
+}
+
 button {
     background: none;
     border: none;
