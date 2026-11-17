@@ -8,7 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let hasInteractedWithPrice = false;
 
     const searchBtn = document.querySelector('.hero__search-button');
-    if (!searchBtn) return; 
+    if (!searchBtn) return;
+
+    const REGIONS = (typeof REGION_VALUES !== 'undefined') ? REGION_VALUES : ["Seaside", "Countryside", "Village", "Town", "Mountains"];
 
     function toggleDropdown(field) {
         if (field.classList.contains('is-open')) field.classList.remove('is-open');
@@ -17,10 +19,18 @@ document.addEventListener('DOMContentLoaded', () => {
     function closeAllDropdowns() {
         document.querySelectorAll('.hero__field').forEach(f => f.classList.remove('is-open'));
     }
-    function toISODate(d) { return d.toISOString().slice(0, 10); }
 
-    const locationField  = document.querySelector('.hero__field--location');
-    const locationLabel  = locationField.querySelector('.hero__field-label');
+    function toISODate(d) {
+        const y = d.getFullYear();
+        const m = String(d.getMonth() + 1).padStart(2, '0');
+        const day = String(d.getDate()).padStart(2, '0');
+        return `${y}-${m}-${day}`;
+    }
+
+    // function toISODate(d) { return d.toISOString().slice(0, 10); }
+
+    const locationField = document.querySelector('.hero__field--location');
+    const locationLabel = locationField.querySelector('.hero__field-label');
     const locationOptions = locationField.querySelectorAll('.hero__dropdown-item');
 
     locationField.addEventListener('click', (e) => {
@@ -37,18 +47,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    const datesField   = document.querySelector('.hero__field--dates');
-    const datesLabel   = datesField.querySelector('.hero__field-label');
+    const datesField = document.querySelector('.hero__field--dates');
+    const datesLabel = datesField.querySelector('.hero__field-label');
     const calendarDays = document.getElementById('calendarDays');
     const calendarTitle = document.getElementById('calendarTitle');
     const prevBtn = document.getElementById('prevMonth');
     const nextBtn = document.getElementById('nextMonth');
 
-    let currentDate  = new Date();
+    let currentDate = new Date();
     let currentMonth = currentDate.getMonth();
-    let currentYear  = currentDate.getFullYear();
-    const monthNames = ["January","February","March","April","May","June","July",
-                        "August","September","October","November","December"];
+    let currentYear = currentDate.getFullYear();
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July",
+        "August", "September", "October", "November", "December"];
 
     function renderCalendar() {
         const now = new Date();
@@ -58,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const isCurrentMonth = (currentYear === today.getFullYear() && currentMonth === today.getMonth());
         const isPastMonth = (currentYear < today.getFullYear()) ||
-                            (currentYear === today.getFullYear() && currentMonth < today.getMonth());
+            (currentYear === today.getFullYear() && currentMonth < today.getMonth());
         prevBtn.disabled = isCurrentMonth || isPastMonth;
 
         const firstDay = new Date(currentYear, currentMonth, 1).getDay();
@@ -83,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (thisDate >= startDate && thisDate <= endDate) {
                         dayDiv.classList.add('is-in-range');
                         if (thisDate.getTime() === startDate.getTime()) dayDiv.classList.add('is-selected', 'range-start');
-                        if (thisDate.getTime() === endDate.getTime())   dayDiv.classList.add('is-selected', 'range-end');
+                        if (thisDate.getTime() === endDate.getTime()) dayDiv.classList.add('is-selected', 'range-end');
                     }
                 } else if (startDate && thisDate.getTime() === startDate.getTime()) {
                     dayDiv.classList.add('is-selected');
@@ -115,12 +125,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     prevBtn.addEventListener('click', (e) => { e.stopPropagation(); currentMonth--; if (currentMonth < 0) { currentMonth = 11; currentYear--; } renderCalendar(); });
+
     nextBtn.addEventListener('click', (e) => { e.stopPropagation(); currentMonth++; if (currentMonth > 11) { currentMonth = 0; currentYear++; } renderCalendar(); });
+
     datesField.addEventListener('click', (e) => { if (e.target.closest('.hero__calendar')) return; toggleDropdown(datesField); });
+
     renderCalendar();
 
-    const guestsField  = document.querySelector('.hero__field--guests');
-    const guestsLabel  = guestsField.querySelector('.hero__field-label');
+    const guestsField = document.querySelector('.hero__field--guests');
+    const guestsLabel = guestsField.querySelector('.hero__field-label');
     const maxGuests = 12;
 
     const countAdultsEl = document.getElementById('count-adults');
@@ -164,13 +177,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateGuestUI();
 
-    const priceField  = document.querySelector('.hero__field--price');
-    const priceLabel  = priceField.querySelector('.hero__field-label');
+    const priceField = document.querySelector('.hero__field--price');
+    const priceLabel = priceField.querySelector('.hero__field-label');
     const priceMinInput = document.getElementById('price-min');
     const priceMaxInput = document.getElementById('price-max');
-    const priceMinText  = document.getElementById('price-min-text');
-    const priceMaxText  = document.getElementById('price-max-text');
-    const sliderTrack   = document.getElementById('slider-track');
+    const priceMinText = document.getElementById('price-min-text');
+    const priceMaxText = document.getElementById('price-max-text');
+    const sliderTrack = document.getElementById('slider-track');
 
     function updatePriceUI() {
         let minVal = parseInt(priceMinInput.value);
@@ -201,11 +214,11 @@ document.addEventListener('DOMContentLoaded', () => {
     priceField.addEventListener('click', (e) => { if (e.target.closest('.hero__price-dropdown')) return; toggleDropdown(priceField); });
     updatePriceUI();
 
-    const addFiltersBtn   = document.querySelector('.hero__add-filters');
-    const filtersPopup    = document.querySelector('.hero__filters-popup');
+    const addFiltersBtn = document.querySelector('.hero__add-filters');
+    const filtersPopup = document.querySelector('.hero__filters-popup');
     const closeFiltersBtn = document.getElementById('closeFilters');
     const clearFiltersBtn = document.getElementById('clearFilters');
-    const showVillasBtn   = document.getElementById('showVillas');
+    const showVillasBtn = document.getElementById('showVillas');
     const filterCheckboxes = document.querySelectorAll('.hero__filters-label input[type="checkbox"]');
 
     addFiltersBtn.addEventListener('click', (e) => { e.preventDefault(); closeAllDropdowns(); filtersPopup.classList.toggle('is-open'); });
@@ -225,7 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (match) { locationLabel.textContent = match.textContent; locationLabel.classList.add('is-selected'); }
     }
 
-    const checkin  = initParams.get('checkin');
+    const checkin = initParams.get('checkin');
     const checkout = initParams.get('checkout');
     if (checkin) {
         startDate = new Date(checkin + 'T00:00:00');
@@ -233,7 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateDateLabel(); renderCalendar();
     }
 
-    const inAdults   = Number(initParams.get('adults'))   || 0;
+    const inAdults = Number(initParams.get('adults')) || 0;
     const inChildren = Number(initParams.get('children')) || 0;
     if (inAdults || inChildren) { adults = inAdults; children = inChildren; hasInteractedWithGuests = true; updateGuestUI(); }
 
@@ -244,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const inAmenities = (initParams.get('amenities') || '').split(',').filter(Boolean);
-    const inRegions   = (initParams.get('regions')   || '').split(',').filter(Boolean);
+    const inRegions = (initParams.get('regions') || '').split(',').filter(Boolean);
     filterCheckboxes.forEach(cb => {
         if (inAmenities.includes(cb.value) || inRegions.includes(cb.value)) cb.checked = true;
     });
@@ -252,8 +265,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function readCurrentState() {
         const state = {
             location: selectedLocation || '',
-            checkin:  startDate ? toISODate(startDate) : '',
-            checkout: endDate   ? toISODate(endDate)   : '',
+            checkin: startDate ? toISODate(startDate) : '',
+            checkout: endDate ? toISODate(endDate) : '',
             adults, children,
             priceMin: hasInteractedWithPrice ? parseInt(priceMinInput.value) : null,
             priceMax: hasInteractedWithPrice ? parseInt(priceMaxInput.value) : null,
@@ -262,7 +275,8 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         filterCheckboxes.forEach(cb => {
             if (!cb.checked) return;
-            (REGION_VALUES.includes(cb.value) ? state.regions : state.amenities).push(cb.value);
+            // (REGION_VALUES.includes(cb.value) ? state.regions : state.amenities).push(cb.value);
+            (REGIONS.includes(cb.value) ? state.regions : state.amenities).push(cb.value);
         });
         return state;
     }
@@ -270,14 +284,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function buildQuery(state) {
         const p = new URLSearchParams();
         if (state.location) p.set('location', state.location);
-        if (state.checkin)  p.set('checkin',  state.checkin);
+        if (state.checkin) p.set('checkin', state.checkin);
         if (state.checkout) p.set('checkout', state.checkout);
-        if (state.adults)   p.set('adults',   state.adults);
+        if (state.adults) p.set('adults', state.adults);
         if (state.children) p.set('children', state.children);
         if (state.priceMin != null) p.set('priceMin', state.priceMin);
         if (state.priceMax != null) p.set('priceMax', state.priceMax);
         if (state.amenities.length) p.set('amenities', state.amenities.join(','));
-        if (state.regions.length)   p.set('regions',   state.regions.join(','));
+        if (state.regions.length) p.set('regions', state.regions.join(','));
         return p.toString();
     }
 
