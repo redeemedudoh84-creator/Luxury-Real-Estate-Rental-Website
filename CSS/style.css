@@ -796,7 +796,6 @@ li {
     background: rgba(75, 85, 95, 1);
 }
 
-
 .home-hero-section-wrapper-top-text {
     display: flex;
     align-items: center;
@@ -1246,6 +1245,43 @@ li {
     font-size: 28px;
     line-height: 1.2;
     color: var(--color-text);
+}
+
+.villa-card__title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.villa-card__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(24, 29, 36, 0.15);
+    color: var(--color-text);
+    text-decoration: none;
+    flex-shrink: 0;
+    font-size: 13px;
+    transition: background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.villa-card__link:hover {
+    background: var(--color-text);
+    color: #ffffff;
+    border-color: var(--color-text);
+    transform: translateX(3px);
+}
+
+.villa-card__link:focus-visible {
+    outline: 2px solid #976F4B;
+    outline-offset: 3px;
 }
 
 .villa-card__amenities {

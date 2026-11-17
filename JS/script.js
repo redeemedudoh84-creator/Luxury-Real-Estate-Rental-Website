@@ -314,7 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
         void toast.offsetWidth;
         toast.classList.add('toast--show');
         clearTimeout(toastTimeout);
-        toastTimeout = setTimeout(() => toast.classList.remove('toast--show'), 2400);
+        toastTimeout = setTimeout(() => toast.classList.remove('toast--show'), 3500);
     }
 
     const STORAGE_KEY = 'savedVillas';
