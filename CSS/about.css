@@ -20,8 +20,8 @@ body {
 .about-nav-bar-wrapper {
     width: 100%;
     display: flex;
-    padding-left: 14%;
-    padding-right: 14%;
+    padding-left: 7%;
+    padding-right: 7%;
     justify-content: space-between;
     /* position: sticky; */
 }
