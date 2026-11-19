@@ -32,7 +32,7 @@ const villasData = {
     },
 
     luna: {
-        name: "Villa Luna", country: "Greece", location: "Seaside", price: "€350", guests: 11, bedrooms: 6, bathrooms: 2.5, size: "120m²",
+        name: "Villa Luna", country: "Greece", location: "Seaside", price: "€350", guests: 11, bedrooms: 6, bathrooms: 25, size: "120m²",
         image: "/Images/villas/luna.jpg",
         amenities: [
             { name: "Swimming pool", icon: "pool" }, { name: "Outdoor dining table", icon: "outdoor_dining" }, { name: "Playstation", icon: "playstation" },
