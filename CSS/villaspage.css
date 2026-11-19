@@ -18,7 +18,6 @@ body {
     align-items: center;
     gap: 64px;
     padding: 157px 20px;
-    position: relative;
     isolation: isolate;
     background:
         linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 64.5%),
