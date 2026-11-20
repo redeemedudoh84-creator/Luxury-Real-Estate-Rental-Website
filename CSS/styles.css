@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Raleway', sans-serif;
     color: #181D24;
@@ -400,7 +399,26 @@ ul {
     color: rgba(137, 152, 166, 1);
     text-align: center;
     margin: 0;
-    cursor: pointer;
+    /* cursor: pointer; */
+}
+
+#daily-price-display {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 17.33px;
+    line-height: 26px;
+    letter-spacing: 0%;
+}
+
+#total-price-display {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 17.33px;
+    line-height: 26px;
+    letter-spacing: 0%;
+
 }
 
 .share-modal-overlay {
@@ -488,14 +506,16 @@ ul {
 }
 
 .location-toggler-container {
-    max-width: 1040px;
+    max-width: 1090px;
     margin: 2rem auto;
     padding: 0 1rem;
-    border-radius: 10px 10px 10px 150px;
+    border-radius: 10px 10px 150px 10px;
+    /* border: 2px solid red; */
 }
 
 .location-title {
-    font-weight: 400;
+    font-weight: 700;
+    font-size: 32px;
     color: #333;
     margin-bottom: 0.5rem;
     font-family: "Rufina", serif;
@@ -504,7 +524,7 @@ ul {
 #map {
     height: 500px;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px 150px 10px 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     background-color: #e0e0e0;
     filter: grayscale(0.6) sepia(0.1) contrast(0.9);
@@ -559,6 +579,15 @@ ul {
     font-weight: bold;
     font-size: 0.85rem;
     margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+
 }
 
 .weekdays {
@@ -568,12 +597,14 @@ ul {
     font-size: 0.75rem;
     color: #888;
     margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 2px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .day {
@@ -637,7 +668,13 @@ ul {
     margin-top: 0;
     margin-bottom: 25px;
     color: #1a202c;
-    font-family: 'Rufina', serif;
+    font-family: "Rufina", serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: 1px;
+    vertical-align: middle;
 }
 
 .btn-book {
@@ -656,6 +693,14 @@ ul {
     letter-spacing: 1px;
     cursor: pointer;
     transition: background 0.3s;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
 }
 
 .btn-book:hover {
@@ -672,7 +717,13 @@ ul {
     font-size: 0.75rem;
     color: #555;
     line-height: 1.6;
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
 }
 
 .disclaimer a {
@@ -684,6 +735,18 @@ ul {
     margin-top: 8px;
 }
 
+.ask-for-help-text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+}
+
 .gray-background-section {
     background-color: #F5F3F1;
     width: 100%;
@@ -691,9 +754,10 @@ ul {
 }
 
 .availability-container {
-    width: 85%;
+    width: 83%;
     max-width: 1100px;
     margin: 0 auto;
+    /* border: 2px solid green; */
 }
 
 .about-us-cta {
@@ -706,14 +770,14 @@ ul {
 
 .about-us-cta-wrapper {
     width: 83%;
-    height: 65vh;
+    height: 70vh;
     display: flex;
     gap: 1%;
 }
 
 .about-us-cta-left,
 .about-us-cta-right {
-    height: 64.5vh;
+    height: 70vh;
 }
 
 .about-us-cta-left {
@@ -795,18 +859,20 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px 8px 8px 80px;
+    border-radius: 8px 8px 80px 8px;
+    /* border: 2px solid black; */
 }
 
 .contact-form {
     width: 100%;
     height: 100%;
     background-color: #FFFFFF;
-    border-radius: 8px 8px 8px 80px;
+    border-radius: 8px 8px 80px 8px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 45px 0px 0px 70px;
+    padding: 42px 0px 0px 70px;
+    border: 2px solid black;
 }
 
 .contact-form-top,
@@ -942,6 +1008,160 @@ ul {
     transform: translate(-50%, 0);
 }
 
+
+.contact-footer-section {
+    background-color: #DFE3E7;
+    max-width: 100%;
+    height: 50vh;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+}
+
+.contact-footer-section-wrapper {
+    width: 83%;
+    height: 90%;
+    /* border: 2px dashed navy; */
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-footer-section-wrapper-top {
+    width: 100%;
+    /* border: 2px solid black; */
+    height: 50%;
+}
+
+.contact-footer-section-wrapper-bottom {
+    width: 100%;
+    /* border: 2px solid magenta; */
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-footer-section-wrapper-bottom-left {
+    width: 60%;
+    height: 100%;
+    /* border: 2px solid gold; */
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-footer-section-wrapper-bottom-right {
+    width: 32%;
+    height: 100%;
+    /* border: 2px solid greenyellow; */
+}
+
+.contact-footer-section-wrapper-bottom-left-top,
+.contact-footer-section-wrapper-bottom-left-middle,
+.contact-footer-section-wrapper-bottom-left-last {
+    width: 100%;
+    /* border: 2px solid indianred; */
+}
+
+.contact-footer-section-wrapper-bottom-left-top {
+    height: 20%;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 2px;
+    font-style: medium;
+    font-size: 20px;
+}
+
+.contact-footer-section-wrapper-bottom-left-middle {
+    height: 60%;
+    color: #5B656F;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+}
+
+.contact-footer-section-wrapper-bottom-left-last {
+    flex: 1;
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+}
+
+.contact-footer-section-wrapper-bottom-left-last>div:first-child {
+    align-items: center;
+}
+
+.contact-footer-section-wrapper-bottom-left-last>div {
+    width: 30%;
+    height: 100%;
+    display: flex;
+}
+
+.contact-footer-section-wrapper-bottom-left-last>div:not(:first-child) {
+    /* border: 2px solid red; */
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-footer-section-wrapper-bottom-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-footer-section-wrapper-bottom-right-one>div {
+    width: 100%;
+    flex: 1;
+    /* border: 2px solid blue; */
+}
+
+.contact-footer-section-wrapper-bottom-right-one {
+    height: 60%;
+    /* border: 2px solid mediumaquamarine; */
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-footer-section-wrapper-bottom-right-two {
+    height: 20%;
+    /* border: 2px solid mediumvioletred; */
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: regular;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    display: flex;
+    align-items: center;
+}
+
+.contact-footer-section-wrapper-bottom-right-one-top {
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    font-style: bold;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.contact-footer-section-wrapper-bottom-right-one-middle {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-style: medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.contact-footer-section-wrapper-bottom-right-one-end {
+    display: flex;
+    align-items: end;
+}
+
 @media (max-width: 1100px) {
     .villa-hero-gallery {
         flex-direction: column;
@@ -1013,5 +1233,4 @@ ul {
         width: 100%;
         height: auto;
     }
-} 
-
+}
